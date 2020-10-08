@@ -1,0 +1,2 @@
+Testing packaged_task/forced_unwind.cc
+UNSUPPORTED: 30_threads/packaged_task/forced_unwind.cc

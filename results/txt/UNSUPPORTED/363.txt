@@ -1,0 +1,2 @@
+Testing list/pthread5.cc
+UNSUPPORTED: 23_containers/list/pthread5.cc

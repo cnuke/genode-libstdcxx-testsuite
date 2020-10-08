@@ -1,0 +1,2 @@
+Testing basic_string/pthread18185.cc
+UNSUPPORTED: 21_strings/basic_string/pthread18185.cc

@@ -1,0 +1,2 @@
+Testing decimal/conversion-from-float.cc
+UNSUPPORTED: decimal/conversion-from-float.cc

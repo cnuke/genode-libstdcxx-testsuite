@@ -1,0 +1,2 @@
+Testing char/12048-5.cc
+UNSUPPORTED: 27_io/objects/char/12048-5.cc

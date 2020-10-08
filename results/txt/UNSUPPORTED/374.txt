@@ -1,0 +1,2 @@
+Testing map/pthread6.cc
+UNSUPPORTED: 23_containers/map/pthread6.cc

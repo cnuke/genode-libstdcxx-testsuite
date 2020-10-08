@@ -1,0 +1,2 @@
+Testing decimal/ctor.cc
+UNSUPPORTED: decimal/ctor.cc

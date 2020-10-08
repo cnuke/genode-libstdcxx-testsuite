@@ -1,0 +1,2 @@
+Testing assign/1.cc
+UNSUPPORTED: 27_io/basic_ofstream/assign/1.cc

@@ -1,0 +1,2 @@
+Testing char/sstream.cc
+UNSUPPORTED: 27_io/basic_istream/tellg/char/sstream.cc

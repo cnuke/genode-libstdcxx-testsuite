@@ -1,0 +1,2 @@
+Testing char/2.cc
+UNSUPPORTED: 25_algorithms/find/istreambuf_iterators/char/2.cc

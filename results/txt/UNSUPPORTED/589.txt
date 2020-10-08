@@ -1,0 +1,2 @@
+Testing basic_ostringstream/pthread3.cc
+UNSUPPORTED: 27_io/basic_ostringstream/pthread3.cc

@@ -1,0 +1,2 @@
+Testing decimal/cast_neg.cc
+UNSUPPORTED: decimal/cast_neg.cc

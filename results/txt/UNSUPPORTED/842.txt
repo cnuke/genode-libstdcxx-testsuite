@@ -1,0 +1,2 @@
+Testing decimal/pr58815.cc
+UNSUPPORTED: decimal/pr58815.cc

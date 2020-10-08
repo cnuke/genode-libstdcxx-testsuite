@@ -1,0 +1,2 @@
+Testing char/fstream.cc
+UNSUPPORTED: 27_io/basic_istream/seekg/char/fstream.cc

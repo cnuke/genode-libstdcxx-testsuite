@@ -1,0 +1,2 @@
+Testing decimal/mixed-mode-cmp_neg.cc
+UNSUPPORTED: decimal/mixed-mode-cmp_neg.cc

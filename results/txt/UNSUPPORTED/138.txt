@@ -1,0 +1,13 @@
+Testing cons/38365.cc
+Setting LD_LIBRARY_PATH to :
+Execution timeout is: 300
+spawning command ./run-core ./nlocale11612.x en_US.ISO8859-1
+spawn [open ...]
+spawn ./core
+Genode sculpt-20.08-46-gedc39313bd <local changes>[0m
+17592186044415 MiB RAM and 8997 caps assigned to init[0m
+[init -> nlocale11612.x] locale support test not supported[0m
+[34mWarning: invalid signal-context capability[0m
+[init] child "nlocale11612.x" exited with exit value 1exp10 file7
+close result is child process exited abnormally
+UNSUPPORTED: 22_locale/locale/cons/38365.cc

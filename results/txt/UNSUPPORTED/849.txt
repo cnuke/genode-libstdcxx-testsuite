@@ -1,0 +1,2 @@
+Testing char/2.cc
+UNSUPPORTED: experimental/string_view/inserters/char/2.cc

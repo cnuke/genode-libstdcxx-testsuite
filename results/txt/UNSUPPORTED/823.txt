@@ -1,0 +1,2 @@
+Testing decimal/binary-arith.cc
+UNSUPPORTED: decimal/binary-arith.cc

@@ -1,0 +1,2 @@
+Testing algorithm/parallel_algorithm.cc
+UNSUPPORTED: 25_algorithms/headers/algorithm/parallel_algorithm.cc

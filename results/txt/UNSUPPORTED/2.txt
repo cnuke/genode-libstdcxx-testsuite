@@ -1,0 +1,2 @@
+Testing bad_exception/23591_thread-1.c
+UNSUPPORTED: 18_support/bad_exception/23591_thread-1.c

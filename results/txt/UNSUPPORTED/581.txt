@@ -1,0 +1,2 @@
+Testing basic_ofstream/pthread2.cc
+UNSUPPORTED: 27_io/basic_ofstream/pthread2.cc

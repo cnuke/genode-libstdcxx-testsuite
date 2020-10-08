@@ -1,0 +1,2 @@
+Testing wchar_t/3_neg.cc
+UNSUPPORTED: 21_strings/c_strings/wchar_t/3_neg.cc

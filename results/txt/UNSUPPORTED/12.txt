@@ -1,0 +1,2 @@
+Testing char/5.cc
+UNSUPPORTED: 21_strings/basic_string/inserters_extractors/char/5.cc

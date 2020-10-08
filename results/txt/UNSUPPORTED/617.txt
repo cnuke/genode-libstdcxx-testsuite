@@ -1,0 +1,2 @@
+Testing char/9.cc
+UNSUPPORTED: 27_io/objects/char/9.cc

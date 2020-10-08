@@ -1,0 +1,2 @@
+Testing erase/dr130-linkage-check.cc
+UNSUPPORTED: 23_containers/multiset/modifiers/erase/dr130-linkage-check.cc

@@ -1,0 +1,2 @@
+Testing 17_intro/shared_with_static_deps.cc
+UNSUPPORTED: 17_intro/shared_with_static_deps.cc

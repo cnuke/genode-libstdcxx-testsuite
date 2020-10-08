@@ -1,0 +1,2 @@
+Testing decimal/operator_neg.cc
+UNSUPPORTED: decimal/operator_neg.cc

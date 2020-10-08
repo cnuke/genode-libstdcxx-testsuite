@@ -1,0 +1,2 @@
+Testing decimal/comparison.cc
+UNSUPPORTED: decimal/comparison.cc

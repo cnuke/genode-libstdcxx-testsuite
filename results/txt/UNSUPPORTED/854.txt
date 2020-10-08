@@ -1,0 +1,2 @@
+Testing mt_allocator/22309_thread.cc
+UNSUPPORTED: ext/mt_allocator/22309_thread.cc

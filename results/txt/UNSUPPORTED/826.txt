@@ -1,0 +1,2 @@
+Testing decimal/compound-assignment-memfunc.cc
+UNSUPPORTED: decimal/compound-assignment-memfunc.cc

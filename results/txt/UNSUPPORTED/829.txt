@@ -1,0 +1,2 @@
+Testing decimal/conversion-from-integral.cc
+UNSUPPORTED: decimal/conversion-from-integral.cc

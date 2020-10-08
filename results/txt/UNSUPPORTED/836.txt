@@ -1,0 +1,2 @@
+Testing decimal/mixed-mode-arith_neg.cc
+UNSUPPORTED: decimal/mixed-mode-arith_neg.cc

@@ -1,0 +1,2 @@
+Testing basic_fstream/53984.cc
+UNSUPPORTED: 27_io/basic_fstream/53984.cc

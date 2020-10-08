@@ -1,0 +1,2 @@
+Testing decimal/pr54036-2.cc
+UNSUPPORTED: decimal/pr54036-2.cc

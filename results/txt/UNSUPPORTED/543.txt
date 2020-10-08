@@ -1,0 +1,2 @@
+Testing numeric/parallel_numeric.cc
+UNSUPPORTED: 26_numerics/headers/numeric/parallel_numeric.cc

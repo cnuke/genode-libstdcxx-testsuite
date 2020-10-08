@@ -1,0 +1,2 @@
+Testing cons/move.cc
+UNSUPPORTED: 27_io/basic_ofstream/cons/move.cc

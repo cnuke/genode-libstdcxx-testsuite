@@ -1,0 +1,2 @@
+Testing char/4.cc
+UNSUPPORTED: 25_algorithms/copy/streambuf_iterators/char/4.cc

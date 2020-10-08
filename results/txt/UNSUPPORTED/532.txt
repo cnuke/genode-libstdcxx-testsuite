@@ -1,0 +1,2 @@
+Testing algorithm/parallel_algorithm_assert2.cc
+UNSUPPORTED: 25_algorithms/headers/algorithm/parallel_algorithm_assert2.cc

@@ -1,0 +1,2 @@
+Testing decimal/incdec-memfunc.cc
+UNSUPPORTED: decimal/incdec-memfunc.cc

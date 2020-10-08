@@ -1,0 +1,2 @@
+Testing sample/81221.cc
+UNSUPPORTED: 25_algorithms/sample/81221.cc

@@ -1,0 +1,2 @@
+Testing wchar_t/2.cc
+UNSUPPORTED: 25_algorithms/advance/istreambuf_iterators/wchar_t/2.cc

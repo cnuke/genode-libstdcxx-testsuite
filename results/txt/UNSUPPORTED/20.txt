@@ -1,0 +1,2 @@
+Testing char/69626.cc
+UNSUPPORTED: 21_strings/c_strings/char/69626.cc

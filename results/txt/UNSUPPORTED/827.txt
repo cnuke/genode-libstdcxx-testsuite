@@ -1,0 +1,2 @@
+Testing decimal/compound-assignment.cc
+UNSUPPORTED: decimal/compound-assignment.cc

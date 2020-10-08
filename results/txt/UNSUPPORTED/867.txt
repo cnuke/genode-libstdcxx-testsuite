@@ -1,0 +1,2 @@
+Testing rope/pthread7-rope.cc
+UNSUPPORTED: ext/rope/pthread7-rope.cc

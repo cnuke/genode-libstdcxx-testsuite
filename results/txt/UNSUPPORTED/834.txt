@@ -1,0 +1,2 @@
+Testing decimal/incdec.cc
+UNSUPPORTED: decimal/incdec.cc

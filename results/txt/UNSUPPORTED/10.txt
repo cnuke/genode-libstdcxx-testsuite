@@ -1,0 +1,2 @@
+Testing char/10.cc
+UNSUPPORTED: 21_strings/basic_string/inserters_extractors/char/10.cc

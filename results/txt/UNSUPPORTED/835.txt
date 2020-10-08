@@ -1,0 +1,2 @@
+Testing decimal/make-decimal.cc
+UNSUPPORTED: decimal/make-decimal.cc
