@@ -1,0 +1,32 @@
+#!/usr/bin/expect -f
+
+set binary_path [lindex $argv 0]
+set binary      [file tail $binary_path]
+
+file copy -force $binary_path /home/jws/testsuite-binaries
+
+exec bash -c "sed -e 's,@TEST_BINARY@,'${binary}',' < ./genode.config.in > ./config"
+
+proc kill_spawned {id} {
+	set pid [exp_pid -i $id]
+	close -i $id
+	exec kill -9 $pid 
+	wait -i $id
+}
+
+set timeout 10
+
+set exit_code 23
+
+eval spawn ./core
+expect {
+	-i $spawn_id -re {.*child.*exited with exit value (\d+).*} {
+		set exit_code $expect_out(1,string);
+	}
+	eof     { puts stderr "Error: testing '$binary' failed with EOF"; exit 2 }
+	timeout { puts stderr "Error: testing '$binary' hit timeout"; exit 3 }
+}
+
+kill_spawned $spawn_id
+
+exit $exit_code

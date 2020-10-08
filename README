@@ -1,0 +1,50 @@
+This repository contains scripts for creating an execution environment for
+executing the libstdc++v3 testsuite directly on base-linux. It draws from
+the experience with Genode's run-tool (managing a Genode scenario) as well as
+goa (building software for Genode on a Unix host).
+
+As the testsuite is normally embedded within the GCC, we patch the testuite's
+configuration in a way that allows to provide our own generated compiler flags,
+see 'patches/'. (For the time being, we include a patched version of the
+dejagnu framework on which the testsuite is built in the 'contrib' directory.
+We only changed the way in which the execution tests are performed as we still
+use the 'unix' target of dejagnu that wants to execute the binaries directly.)
+In case of base-linux we have to accommodate for providing an execution
+environment that runs the test. So we execute the environment with the test
+embedded.
+
+The testsuite will be executed sequentially, which may - depending on the
+used hardware - take a few hours. You should have at least 1 GiB of free
+space in used temp directory available when executing the testsuite and
+around 100 MiB in the result directory as the log files are not compressed.
+Depending on the amount of failures more space might be need for the log
+files.
+
+
+The following steps give an overview on how to use the script:
+
+# Executing the testsuite
+
+  ./prepare-and-execute -G /home/user/src/genode \
+                        -D /home/users/src/genode/depot \
+                        -U genodelabs -T /tmp/testsuite \
+                        -R /home/user/testsuite-results
+
+The script will exit with an exit-code of 0 it was successful. In case of
+failure a non-zero exit-code is returned.
+
+
+Note the script will automatically update the depot archives before preparing
+the execution environment and running the testsuite. Therefore it might be
+reasonable to prepare the sources and update depot beforehand, depending on
+the test infrastructure, e.g.:
+
+  cd $genode_dir && ./tool/ports/prepare_port libc stdcxx && \
+  ./tool/depot/create -j16 UPDATE_VERSIONS=1 FORCE=1 REBUILD= \
+                           genodelabs/bin/x86_64/base-linux \
+                           genodelabs/bin/x86_64/init \
+                           genodelabs/bin/x86_64/libc \
+                           genodelabs/bin/x86_64/lx_fs \
+                           genodelabs/bin/x86_64/posix \
+                           genodelabs/bin/x86_64/stdcxx \
+                           genodelabs/bin/x86_64/vfs

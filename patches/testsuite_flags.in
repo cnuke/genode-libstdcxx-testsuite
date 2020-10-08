@@ -1,0 +1,98 @@
+#!/bin/sh
+
+TOOL_CHAIN=@TOOL_CHAIN_DIR@
+GENODE_PATH=@GENODE_DIR@
+SRC_DIR=@LIBSTDCXX_DIR@
+ABI_PATH=@ABI_DIR@
+DEPOT_PATH=@DEPOT_DIR@
+BASE_API=@BASE_API_VERSION@
+LIBC_API=@LIBC_API_VERSION@
+STDCXX_API=@STDCXX_API_VERSION@
+
+
+query=$1
+
+case ${query} in
+    --install-includes)
+      INCLUDES="-I${SRC_DIR}/testsuite/util"
+      echo ${INCLUDES}
+      ;;
+    --build-includes)
+      INCLUDES="
+-nostdinc
+-I${DEPOT_PATH}/api/stdcxx/${STDCXX_API}/include/stdcxx
+-I${DEPOT_PATH}/api/stdcxx/${STDCXX_API}/include/stdcxx/std
+-I${DEPOT_PATH}/api/stdcxx/${STDCXX_API}/include/stdcxx/c_global
+-I${DEPOT_PATH}/api/libc/${LIBC_API}/include/spec/x86_64/libc
+-I${DEPOT_PATH}/api/libc/${LIBC_API}/include/spec/x86_64
+-I${DEPOT_PATH}/api/libc/${LIBC_API}/include/spec/x86/libc
+-I${DEPOT_PATH}/api/libc/${LIBC_API}/include/spec/x86
+-I${DEPOT_PATH}/api/libc/${LIBC_API}/include/libc-genode
+-I${DEPOT_PATH}/api/libc/${LIBC_API}/include/libc
+-I${DEPOT_PATH}/api/libc/${LIBC_API}/include
+-I${DEPOT_PATH}/api/base/${BASE_API}/include/spec/x86_64
+-I${DEPOT_PATH}/api/base/${BASE_API}/include/spec/x86
+-I${DEPOT_PATH}/api/base/${BASE_API}/include/spec/64bit
+-I${DEPOT_PATH}/api/base/${BASE_API}/include
+-I${TOOL_CHAIN}/x86_64-pc-elf/include/c++/8.3.0/x86_64-pc-elf/64
+-I${TOOL_CHAIN}/lib/gcc/x86_64-pc-elf/8.3.0/include
+-I${SRC_DIR}/include/backward -I${SRC_DIR}/testsuite/util"
+      echo ${INCLUDES}
+      ;;
+    --install-cxx)
+      exit 1
+      ;;
+    --build-cxx)
+      echo ${TOOL_CHAIN}/bin/genode-x86-g++
+      ;;
+    --build-cc)
+      echo ${TOOL_CHAIN}/bin/genode-x86-gcc
+      ;;
+    --cxxflags)
+      CXXFLAGS_default="-fmessage-length=0 -fno-show-column"
+      CXXFLAGS_config="-ffunction-sections -fdata-sections "
+      CXXFLAGS_extra="-fPIC -O2 -m64"
+      echo ${CXXFLAGS_default} ${CXXFLAGS_config} ${CXXFLAGS_extra}
+      ;;
+    --cxxvtvflags)
+      CXXFLAGS_vtv=""
+      LDFLAGS_vtv=""
+      echo ${CXXFLAGS_vtv} ${LDFLAGS_vtv}
+      ;;
+    --cxxparallelflags)
+      CXXFLAGS_parallel=""
+      echo ${CXXFLAGS_parallel}
+      ;;
+    --cxxpchflags)
+      PCHFLAGS=""
+      echo ${PCHFLAGS}
+      ;;
+    --cxxldflags)
+      CXXLDFLAGS="
+-Wl,-melf_x86_64
+-Wl,-gc-sections
+-Wl,-z
+-Wl,max-page-size=0x1000
+-Wl,-Ttext=0x01000000
+-Wl,--dynamic-linker=ld.lib.so
+-Wl,--dynamic-list=${GENODE_PATH}/repos/base/src/ld/genode_dyn.dl
+-Wl,--eh-frame-hdr
+-Wl,-rpath-link=.
+-Wl,-T
+-Wl,${GENODE_PATH}/repos/base/src/ld/genode_dyn.ld
+-l:libc.lib.so
+-l:libm.lib.so
+-l:posix.lib.so
+-nostdlib
+${TOOL_CHAIN}/lib/gcc/x86_64-pc-elf/8.3.0/64/libgcc.a
+-L${ABI_PATH}
+-l:stdcxx.lib.so
+-l:ld.lib.so"
+      echo ${CXXLDFLAGS}
+      ;;
+    *)
+      print_usage
+      ;;
+esac
+
+exit 0

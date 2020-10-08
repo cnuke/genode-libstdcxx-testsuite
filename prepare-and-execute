@@ -1,0 +1,518 @@
+#!/bin/bash
+
+__RP__=$(realpath "$0")
+__PROGNAME__=$(basename "$__RP__")
+__TOOL_DIR__=$(dirname "$__RP__")
+
+
+msg() {
+	printf -- "${__PROGNAME__}: ${1}\n"
+}
+
+
+abort() {
+	local __exit_code__=1
+
+	[ "$2" != "" ] && __exit_code__=$2
+
+	msg "aborting: ${1}"
+	exit $__exit_code__
+}
+
+
+print_usage() {
+	local help=$1
+
+	printf -- "usage: $__PROGNAME__ [-h] -G genode-dir"
+	printf -- " -D depot-dir -U depot-user -T temp-dir -R results-dir\n"
+	if [ "$help" != "" ]; then
+		printf "\t-D depot-dir     depot directory\n"
+		printf "\t-G genode-dir    Genode source directory\n"
+		printf "\t-R result-dir    directory where to store the result directory\n"
+		printf "\t-T temp-dir      directory where to put produced files\n"
+		printf "\t-U depot-user    use archives from depot user\n"
+		printf "\t-h               show this help screen\n"
+	fi
+	printf -- "\n"
+}
+
+
+parse_arguments() {
+	local args="$(getopt D:G:R:T:U:h ${*})"
+
+	[ $? != 0 ] && exit 1
+	set -- $args
+	while [ $# -ge 0 ]; do
+		case "$1" in
+		-D) ARG_DEPOT_DIR="$2"; shift; shift;;
+		-G) ARG_GENODE_DIR="$2"; shift; shift;;
+		-R) ARG_RESULT_DIR="$2"; shift; shift;;
+		-T) ARG_OUTPUT_DIR="$2"; shift; shift;;
+		-U) ARG_DEPOT_USER="$2"; shift; shift;;
+		-h) print_usage "help"; exit 0;;
+		--) shift; break;;
+		esac
+	done
+
+	if [ "$ARG_DEPOT_DIR" = "" ]; then
+		print_usage
+		abort "depot directory not specified."
+	fi
+
+	if [ "$ARG_GENODE_DIR" = "" ]; then
+		print_usage
+		abort "genode directory not specified."
+	fi
+
+	if [ "$ARG_DEPOT_USER" = "" ]; then
+		print_usage
+		abort "depot user not specified."
+	fi
+
+	if [ "$ARG_OUTPUT_DIR" = "" ]; then
+		print_usage
+		abort "no output directory specified."
+	fi
+
+	if [ "$ARG_RESULT_DIR" = "" ]; then
+		print_usage
+		abort "no result directory specified."
+	fi
+}
+
+
+abort_create_failed() {
+	printf -- "could not created needed depot archives, abort\n"
+	exit 1
+}
+
+create_depot_archives() {
+
+	(cd ${GENODE_DIR} && \
+	 ./tool/depot/create -j16 \
+		DEPOT_DIR="${DEPOT_DIR}" \
+		UPDATE_VERSIONS=1 \
+		FORCE=1 REBUILD= \
+		${DEPOT_USER}/bin/${ARCH}/base-linux \
+		${DEPOT_USER}/bin/${ARCH}/init \
+		${DEPOT_USER}/bin/${ARCH}/libc \
+		${DEPOT_USER}/bin/${ARCH}/lx_fs \
+		${DEPOT_USER}/bin/${ARCH}/posix \
+		${DEPOT_USER}/bin/${ARCH}/stdcxx \
+		${DEPOT_USER}/bin/${ARCH}/vfs) || abort_create_failed
+}
+
+log() {
+	printf -- "%s$2" "$1"
+}
+
+
+abort_missing_archive() {
+	printf -- "'$1' binary archive not found, abort\n"
+	exit 1
+}
+
+
+abort_gen_failed() {
+	printf -- "could not generate ABI stubs, abort\n"
+	exit 1
+}
+
+
+check_archive() {
+	local dir="$1/$2"
+	[ -d "$dir" ] && return 0 || return 1
+}
+
+
+copy_content_to() {
+	local src_dir="$1"
+	local target_dir="$2"
+
+	for file in ${src_dir}/*; do
+		ln -sf ${file} ${target_dir}/
+	done
+}
+
+
+prepare_run_environment() {
+	local depot_dir="$1"
+	local depot_user="$2"
+	local target_bin_dir="$1"
+
+	log "Check binary archives and prepare base-linux run environment" "... "
+	mkdir -p ${target_bin_dir} 2>/dev/null|| true
+	rm ${target_bin_dir}/* 2>/dev/null || true
+
+	local dir="${depot_dir}/${depot_user}/bin/$ARCH"
+	local arc="init/$INIT_SRC_VERSION"
+	check_archive "$dir" "$arc" || abort_missing_archive "$arc"
+	copy_content_to "$dir/$arc" "$target_bin_dir"
+
+	local arc="base-linux/$BASE_SRC_VERSION"
+	check_archive "$dir" "$arc" || abort_missing_archive "$arc"
+	copy_content_to "$dir/$arc" "$target_bin_dir"
+
+	local arc="lx_fs/$LXFS_SRC_VERSION"
+	check_archive "$dir" "$arc" || abort_missing_archive "$arc"
+	copy_content_to "$dir/$arc" "$target_bin_dir"
+
+	local arc="libc/$LIBC_SRC_VERSION"
+	check_archive "$dir" "$arc" || abort_missing_archive "$arc"
+	copy_content_to "$dir/$arc" "$target_bin_dir"
+
+	local arc="posix/$POSIX_SRC_VERSION"
+	check_archive "$dir" "$arc" || abort_missing_archive "$arc"
+	copy_content_to "$dir/$arc" "$target_bin_dir"
+
+	local arc="stdcxx/$STDCXX_SRC_VERSION"
+	check_archive "$dir" "$arc" || abort_missing_archive "$arc"
+	copy_content_to "$dir/$arc" "$target_bin_dir"
+
+	local arc="vfs/$VFS_SRC_VERSION"
+	check_archive "$dir" "$arc" || abort_missing_archive "$arc"
+	copy_content_to "$dir/$arc" "$target_bin_dir"
+
+	log "done" "\n"
+}
+
+
+prepare_abi_stubs() {
+	local genode_dir="$1"
+	local depot_dir="$2"
+	local depot_user="$3"
+	local abi_dir="$4"
+
+	local d="${depot_user}/api"
+
+	local apis="${d}/base/${BASE_API_VERSION}"
+	apis="${apis[@]} ${d}/libc/${LIBC_API_VERSION}"
+	apis="${apis[@]} ${d}/posix/${POSIX_API_VERSION}"
+	apis="${apis[@]} ${d}/stdcxx/${STDCXX_API_VERSION}"
+	apis="${apis[@]} ${d}/vfs/${VFS_API_VERSION}"
+
+	log "Prepare ABI stubs" "... "
+
+	make -f lib/gen_abi_stubs.mk \
+		GENODE_DIR="${genode_dir}" \
+		DEPOT_DIR="${depot_dir}" \
+		CROSS_DEV_PREFIX="${TOOL_CHAIN_DIR}/bin/genode-x86-" \
+		ABI_DIR="${abi_dir}" \
+		LDFLAGS="-melf_x86_64" \
+		APIS="${apis[@]}" > /dev/null 2>&1 || abort_gen_failed
+
+	#
+	# Dummy libraries to satisfy -lm and -lsupc++
+	#
+	ar -rc ${abi_dir}/libm.a
+	ar -rc ${abi_dir}/libsupc++.a
+
+	log "done" "\n"
+}
+
+
+prepare_stdcxx_source() {
+	log "Prepare stdcxx source" "... "
+	local target="$TARGET_SRC_DIR"
+	mkdir -p ${target} 2>/dev/null|| true
+	rm -rf ${target}/*
+
+	cp -a ${LIBSTDCXX_SRC_DIR}/ ${target}
+
+	local gcc_archive="$(ls -1 ${target}/stdcxx-*/*.tar.xz | tail -n1)"
+	local gcc_version="$(basename ${gcc_archive%.*.*})"
+	tar --strip-components=1 -C ${target}/stdcxx-*/src/lib \
+	    -axf $gcc_archive $gcc_version/gcc/testsuite
+
+	sed -e 's,@LIBSTDCXX_SRC_DIR@,'${TARGET_LIBSTDCXX_SRC_DIR}',' \
+	    < patches/libstdc++.exp.diff.in > ${TARGET_TOP_DIR}/libstdc++.exp.patch
+
+	patch -p1 -d ${target}/stdcxx-*/src/lib/stdcxx/testsuite/lib \
+	      < ${TARGET_TOP_DIR}/libstdc++.exp.patch
+	patch -p1 -d ${target}/stdcxx-*/src/lib/stdcxx/testsuite/lib \
+	      < patches/gdb-test.exp.diff
+
+	log "done" "\n"
+}
+
+
+prepare_testsuite_flags() {
+	log "Prepare 'testsuite_flags'" "... "
+	sed -e 's,@BASE_API_VERSION@,'${BASE_API_VERSION}',' \
+	    -e 's,@LIBC_API_VERSION@,'${LIBC_API_VERSION}',' \
+	    -e 's,@STDCXX_API_VERSION@,'${STDCXX_API_VERSION}',' \
+	    -e 's,@DEPOT_DIR@,'${DEPOT_DIR}/${DEPOT_USER}',' \
+	    -e 's,@GENODE_DIR@,'${GENODE_DIR}',' \
+	    -e 's,@TOOL_CHAIN_DIR@,'${TOOL_CHAIN_DIR}',' \
+	    -e 's,@LIBSTDCXX_DIR@,'${TARGET_LIBSTDCXX_SRC_DIR}',' \
+	    -e 's,@ABI_DIR@,'${TARGET_TOP_DIR}/abi',' \
+	    < patches/testsuite_flags.in > \
+	    ${TARGET_LIBSTDCXX_SRC_DIR}/scripts/testsuite_flags
+	log "done" "\n"
+}
+
+
+copy_run_env() {
+	local bin_dir="$1"
+	local run_test_dir="$2"
+
+	mkdir -p ${run_test_dir} 2>/dev/null || true
+
+	cp ${bin_dir}/* ${run_test_dir}
+	cp run/* ${run_test_dir}
+}
+
+
+generate_html_overview() {
+	local t="$1"
+	local d="$2"
+	local sum_file="${d}/libstdc++.sum"
+	local log_file="${d}/libstdc++.log"
+
+	if [ ! -f "${sum_file}" ]; then
+		printf -- "Error: libstdc++-v3 testsuite summary not found\n"
+		exit 23
+	fi
+
+	mkdir -p ${t}/txt/{FAIL,UNRESOLVED} 2> /dev/null || true
+
+	log "Generate HTML overview" "... "
+
+	mawk -v log_file="${log_file}" \
+	     -f ${PROG_DIR}/lib/parse-sum-file.awk ${sum_file} \
+	     > ${t}/results.html
+	mawk -v log_file="${log_file}" \
+	     -v filter=FAIL \
+	     -f ${PROG_DIR}/lib/parse-sum-file.awk ${sum_file} \
+	     > ${t}/results_FAIL.html
+	mawk -v log_file="${log_file}" \
+	     -v filter=UNRESOLVED \
+	     -f ${PROG_DIR}/lib/parse-sum-file.awk ${sum_file} \
+	     > ${t}/results_UNRESOLVED.html
+	log "done" "\n"
+}
+
+
+copy_results() {
+	local output_dir="$1"
+	local results_top_dir="$2"
+	local result_dir="${results_top_dir}/$(date '+%Y-%m-%d-%H%M%S')"
+
+	mkdir -p ${result_dir} 2>/dev/null || true
+
+	cp "${output_dir}/testsuite-runtest.log" ${result_dir}
+	cp -a "${output_dir}/txt" ${result_dir}
+	cp ${output_dir}/*.html ${result_dir}
+
+	mkdir -p ${result_dir}/testsuite-runtest 2>/dev/null || true
+	cp "${output_dir}/testsuite-runtest/libstdc++.sum" \
+	   ${result_dir}/testsuite-runtest
+	cp "${output_dir}/testsuite-runtest/libstdc++.log" \
+	   ${result_dir}/testsuite-runtest
+}
+
+
+check_compile() {
+
+	local testsuite_dir="${TARGET_LIBSTDCXX_SRC_DIR}/testsuite"
+	${TARGET_LIBSTDCXX_SRC_DIR}/scripts/create_testsuite_files \
+		${testsuite_dir} ${TARGET_TOP_DIR}
+
+	flags_script=${TARGET_LIBSTDCXX_SRC_DIR}/scripts/testsuite_flags
+	INCLUDES=$(bash $flags_script --build-includes)
+	PCH_FLAGS=$(bash $flags_script --cxxpchflags)
+	FLAGS="$(bash $flags_script --cxxflags) -DLOCALEDIR=\".\""
+	LDFLAGS=$(bash $flags_script --cxxldflags)
+	TEST_FLAGS="-S"
+	COMPILER=$(bash $flags_script --build-cxx)
+	CXX="$COMPILER $INCLUDES $PCH_FLAGS $FLAGS -Wfatal-errors $TEST_FLAGS"
+	CXX_LINK="$COMPILER $INCLUDES $PCH_FLAGS $FLAGS $LDFLAGS -Wfatal-errors"
+
+	printf -- "Check compile, compile only line is:\n$CXX\nlink ;ine is:\n$CXX_LINK\n"
+
+	t="${TARGET_TOP_DIR}/check_compile"
+	mkdir $t 2>/dev/null || true
+
+	TESTS_FILE="${TARGET_TOP_DIR}/testsuite_files"
+	UNIQUE_ID=0
+
+	log="$t/check_compile.log"
+	echo > $log
+
+	local fail_total=0
+	local xfail_total=0
+	local pass_total=0
+	for NAME in $(cat $TESTS_FILE)
+	do
+		OUTPUT_NAME=$UNIQUE_ID
+		src="${testsuite_dir}/$NAME"
+		clog="$t/$OUTPUT_NAME.log"
+
+		test_flags="$(awk -F\" '/dg-options/ { print $2 }' ${src})"
+		# -pthread is not supported by Genode's toolchain
+		test_flags="$(echo "$test_flags" | sed 's;-pthread;;')"
+		if grep -q 'dg-run' ${src}; then
+			compiler="$CXX_LINK"
+		else
+			compiler="$CXX"
+		fi
+		echo $compiler ${test_flags} ${src} -o $t/$OUTPUT_NAME > $clog
+		$compiler ${test_flags} ${src} -o $t/$OUTPUT_NAME >> $clog 2>&1
+
+		result=$?
+		if [ $result -eq 0 ]; then
+			let pass_total+=1
+			echo PASS: $NAME >> $log
+			rm $t/$OUTPUT_NAME.log
+			[ -f $t/$OUTPUT_NAME ] && rm $t/$OUTPUT_NAME
+		else
+			#
+			# foo_neg.cc tests are explicitly expected failures,
+			# normally the condition specified in 'dg-error' should
+			# match the compiler output. We do not perform this check
+			# for now.
+			#
+			# NOTE: there are also tests that produce compile errors
+			#       but are not “marked” but contain a 'dg-error'
+			#       check. Those tests will be registered as FAIL.
+			#       This is in contrast to the testsuite where those
+			#       tests are registered as PASS when the errors match.
+			#
+			if echo "${src}"|grep -q neg.cc; then
+				let xfail_total+=1
+				mv $t/$OUTPUT_NAME.log $t/${OUTPUT_NAME}.log.xfail
+				echo "XFAIL: $NAME $OUTPUT_NAME.log" >> $log
+			else
+				let fail_total+=1
+				echo "FAIL: $NAME $OUTPUT_NAME.log" >> $log
+			fi
+		fi
+		let UNIQUE_ID+=1
+	done
+	printf -- "\nfail: $fail_total\nxfail: $xfail_total\npass:$pass_total\ntotal: $((fail_total + xfail_total + pass_total))\n" >> $log
+}
+
+
+main() {
+	parse_arguments "$@"
+
+	# important global variables from which all other settings are derived
+	ARCH="$(uname -m)"
+	TOOL_CHAIN_DIR="/usr/local/genode/tool/current"
+	GENODE_DIR="$ARG_GENODE_DIR"
+	DEPOT_DIR="$ARG_DEPOT_DIR"
+	DEPOT_USER="$ARG_DEPOT_USER"
+	TARGET_TOP_DIR="$ARG_OUTPUT_DIR"
+
+	TARGET_TOP_DIR="${TARGET_TOP_DIR}/var"
+	TARGET_BIN_DIR="${TARGET_TOP_DIR}/bin/$ARCH"
+	TARGET_SRC_DIR="${TARGET_TOP_DIR}/src"
+	TARGET_RUNTEST_DIR="${TARGET_TOP_DIR}/testsuite-runtest"
+
+	PROG_DIR="$__TOOL_DIR__"
+
+	REPO_DIR="${GENODE_DIR}/repos"
+	BASE_DIR="${REPO_DIR}/base"
+	BASE_L_DIR="${REPO_DIR}/base-linux"
+	LIBPORTS_DIR="${REPO_DIR}/libports"
+	OS_DIR="${REPO_DIR}/os"
+	API_DIR="recipes/api"
+	SRC_DIR="recipes/src"
+
+	#
+	# The "bool || func" pattern is used because I briefly tinkered
+	# with the idea to make each step toggleable. For now all needed
+	# and completely implemented steps will be executed.
+	#
+
+	#
+	# Make sure we use up-to-date archives and only afterwards gather
+	# version information.
+	#
+	false || create_depot_archives
+
+	BASE_API_VERSION="$(awk '{print $1}' ${BASE_DIR}/${API_DIR}/base/hash)"
+	BASE_SRC_VERSION="$(awk '{print $1}' ${BASE_L_DIR}/${SRC_DIR}/base-linux/hash)"
+	LIBC_API_VERSION="$(awk '{print $1}' ${LIBPORTS_DIR}/${API_DIR}/libc/hash)"
+	LIBC_SRC_VERSION="$(awk '{print $1}' ${LIBPORTS_DIR}/${SRC_DIR}/libc/hash)"
+	POSIX_API_VERSION="$(awk '{print $1}' ${LIBPORTS_DIR}/${API_DIR}/posix/hash)"
+	POSIX_SRC_VERSION="$(awk '{print $1}' ${LIBPORTS_DIR}/${SRC_DIR}/posix/hash)"
+	STDCXX_API_VERSION="$(awk '{print $1}' ${LIBPORTS_DIR}/${API_DIR}/stdcxx/hash)"
+	STDCXX_SRC_VERSION="$(awk '{print $1}' ${LIBPORTS_DIR}/${SRC_DIR}/stdcxx/hash)"
+	VFS_API_VERSION="$(awk '{print $1}' ${OS_DIR}/${API_DIR}/vfs/hash)"
+	VFS_SRC_VERSION="$(awk '{print $1}' ${OS_DIR}/${SRC_DIR}/vfs/hash)"
+	LXFS_SRC_VERSION="$(awk '{print $1}' ${OS_DIR}/${SRC_DIR}/lx_fs/hash)"
+	INIT_SRC_VERSION="$(awk '{print $1}' ${OS_DIR}/${SRC_DIR}/init/hash)"
+
+	LIBSTDCXX_SRC_DIR="${GENODE_DIR}/contrib/stdcxx-$(< ${LIBPORTS_DIR}/ports/stdcxx.hash)"
+	TARGET_LIBSTDCXX_SRC_DIR="${TARGET_SRC_DIR}/$(basename ${LIBSTDCXX_SRC_DIR})/src/lib/stdcxx"
+
+	#
+	# First we created and populate the run environment from
+	# the binary depot archives. We abort whenever we encounter
+	# a missing archive as otherwise the execution tests would not
+	# work. Afterwards we copy the binaries into the runtest directory.
+	# The directory is created implicitly.
+	#
+	# (Both steps could be merged to one.)
+	#
+	false || prepare_run_environment "${DEPOT_DIR}" "${DEPOT_USER}" "${TARGET_BIN_DIR}"
+	false || copy_run_env "${TARGET_BIN_DIR}" "${TARGET_RUNTEST_DIR}"
+
+	#
+	# We generate stub ABI shared-objects that are used during compilation
+	# instead of the actual .lib.so's to prevent interdependency.
+	#
+	false || prepare_abi_stubs "${GENODE_DIR}" "${DEPOT_DIR}" "${DEPOT_USER}" \
+	                           "${TARGET_TOP_DIR}/abi"
+
+	#
+	# Copy current stdcxx source directory form Genode's contrib
+	# directory and extract GCC dejagnu testsuite. We do that to not
+	# pollute the original contrib directory.
+	#
+	false || prepare_stdcxx_source
+
+	#
+	# Next we fill in the flags template. We abort whenever a
+	# needed API variable is empty.
+	#
+	false || prepare_testsuite_flags
+
+	#
+	# Execute compile check - for now intentionally disabled - is there
+	# for to only check if we are able to compile the tests with our
+	# toolchain/stub libraries. Unfortunately that involves more dejagnu
+	# annotation parsing which is not implemented for that to be useful.
+	#
+	true || check_compile
+
+	#
+	# Execute testsuite in a sub-shell so that we do not have to
+	# care about $PWD.
+	#
+	# make sure we "usable" undefined references
+	export COLLECT_NO_DEMANGLE=1
+	false || (cd ${TARGET_RUNTEST_DIR} && \
+		expect -- ${PROG_DIR}/contrib/dejagnu/runtest.exp \
+		       --verbose \
+		       --build=x86_64-pc-freebsd12.0 --target_board=unix \
+		       --tool libstdc++ \
+		       --srcdir=${TARGET_LIBSTDCXX_SRC_DIR}/testsuite) 2>&1|\
+		tee ${TARGET_TOP_DIR}/testsuite-runtest.log
+
+	#
+	# Parse the produced log files and generate HTML overview. As the
+	# output directory is volatile, we copy the generated files to
+	# additonal result directory.
+	#
+	false || generate_html_overview "${TARGET_TOP_DIR}" "${TARGET_RUNTEST_DIR}"
+	false || copy_results "${TARGET_TOP_DIR}" "${ARG_RESULT_DIR}"
+
+	exit 0
+}
+
+
+main "$@"
+
+exit 1

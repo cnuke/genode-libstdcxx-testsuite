@@ -1,0 +1,11 @@
+--- a/libstdc++.exp
++++ b/libstdc++.exp
+@@ -118,7 +118,7 @@
+       setenv LANG C.ASCII
+     }
+ 
+-    set blddir [lookfor_file [get_multilibs] libstdc++-v3]
++    set blddir "@LIBSTDCXX_SRC_DIR@"
+     set flags_file "${blddir}/scripts/testsuite_flags"
+     set shlib_ext [get_shlib_extension]
+     v3track flags_file 2

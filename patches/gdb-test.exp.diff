@@ -1,0 +1,12 @@
+Do not execute GDB test
+--- a/gdb-test.exp.orig
++++ b/gdb-test.exp
+@@ -80,6 +80,8 @@
+ # Argument 0 is the marker on which to put a breakpoint
+ # Argument 2 handles expected failures and the like
+ proc gdb-test { marker {selector {}} {load_xmethods 0} } {
++    return
++
+     if { ![isnative] || [is_remote target] } { return }
+ 
+     if {[string length $selector] > 0} {
