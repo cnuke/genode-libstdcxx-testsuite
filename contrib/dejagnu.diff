@@ -1,0 +1,13 @@
+The dejagnu contrib code was obtained by copying '/usr/share/dejagnu'
+on a Debian 9 system featuring dejagnu-1.6-1.1.
+--- a/config/unix.exp
++++ b/config/unix.exp
+@@ -79,6 +79,8 @@
+ 	verbose -log "Setting LD_LIBRARY_PATH to $ld_library_path:$orig_ld_library_path" 2
+ 	verbose -log "Execution timeout is: $test_timeout" 2
+ 
++	set command "./run-core $command"
++
+ 	set id [remote_spawn $dest "$command" "readonly"]
+ 	if { $id < 0 } {
+ 	    set output "remote_spawn failed"
