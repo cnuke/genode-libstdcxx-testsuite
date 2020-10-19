@@ -35,6 +35,8 @@
 					<inline name="rtc">2020-10-01 00:01</inline>
 				</dir>
 			</vfs>
+			<arg value="@TEST_BINARY@"/>
+			<arg value="@TEST_ARG1@"/>
 			<libc stdout="/dev/log" stderr="/dev/log" rtc="/dev/rtc"/>
 		</config>
 	</start>

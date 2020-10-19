@@ -1,11 +1,30 @@
 #!/usr/bin/expect -f
 
+if { $argc == 0 } {
+	puts "usage: run-core <binary> \[arg1\]"
+	exit 1
+}
+
 set binary_path [lindex $argv 0]
 set binary      [file tail $binary_path]
 
 file copy -force $binary_path /home/jws/testsuite-binaries
 
 exec bash -c "sed -e 's,@TEST_BINARY@,'${binary}',' < ./genode.config.in > ./config"
+
+#
+# If there is a second argument replace the string. If not
+# remove the whole line. This is done so that we do not have
+# to care much about properly quoting the string and only
+# have to replace the argument rather than adding the whole
+# <arg> node.
+#
+if { $argc == 2 } {
+set test_arg [lindex $argv 1]
+exec bash -c "sed -i -e 's,@TEST_ARG1@,'${test_arg}',' ./config"
+} else {
+exec bash -c "sed -i -e '/@TEST_ARG1@/d' ./config"
+}
 
 proc kill_spawned {id} {
 	set pid [exp_pid -i $id]
