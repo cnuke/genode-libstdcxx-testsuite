@@ -138,7 +138,7 @@ copy_content_to() {
 prepare_run_environment() {
 	local depot_dir="$1"
 	local depot_user="$2"
-	local target_bin_dir="$1"
+	local target_bin_dir="$3"
 
 	log "Check binary archives and prepare base-linux run environment" "... "
 	mkdir -p ${target_bin_dir} 2>/dev/null|| true
