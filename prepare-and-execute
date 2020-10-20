@@ -232,6 +232,15 @@ prepare_stdcxx_source() {
 	patch -p1 -d ${target}/stdcxx-*/src/lib/stdcxx/testsuite/lib \
 	      < patches/gdb-test.exp.diff
 
+	#
+	# The toolchain does not support '-pthread', we remove any dg
+	# directive refering to this option as otherwise tests will
+	# falsely marked as UNSUPPORTED.
+	#
+	find ${target}/stdcxx-*/src/lib/stdcxx/testsuite -name *.cc -exec \
+	     sed -i -e 's;-pthread;  ;g' \
+	            -e 's;dg-require-effective-target pthread;xxx-dg-require-effective-target pthread;g' {} \;
+
 	log "done" "\n"
 }
 
