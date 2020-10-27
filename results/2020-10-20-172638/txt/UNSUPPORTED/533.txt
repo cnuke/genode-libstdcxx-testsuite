@@ -1,0 +1,11 @@
+Testing numeric/parallel_numeric_mixed2.cc
+Grepping /home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/numeric/parallel_numeric_mixed2.cc for the pattern "{[ 	]+dg-[-a-z]+[ 	]+.*[ 	]+}"
+Processing option:  dg-do 1 compile 
+Processing option:  dg-require-parallel-mode 2 "" 
+check_v3_target_parallel_mode: `'
+check_v3_target_parallel_mode: removing cached result
+check_v3_target_parallel_mode: 0
+Processing option:  dg-options 3 "-fopenmp" { target *-*-* } 
+replacement dg-process-target: `{ target *-*-* }'
+dg-process-target-1: `{target *-*-*}'
+UNSUPPORTED: 26_numerics/headers/numeric/parallel_numeric_mixed2.cc

@@ -1,0 +1,7 @@
+Testing mt_allocator/22309_thread.cc
+Grepping /home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/ext/mt_allocator/22309_thread.cc for the pattern "{[ 	]+dg-[-a-z]+[ 	]+.*[ 	]+}"
+Processing option:  dg-require-sharedlib 1 "" 
+Processing option:  dg-options 2 "-g -O2 -pthread -ldl" { target *-*-linux* *-*-gnu* } 
+replacement dg-process-target: `{ target *-*-linux* *-*-gnu* }'
+dg-process-target-1: `{target *-*-linux* *-*-gnu*}'
+UNSUPPORTED: ext/mt_allocator/22309_thread.cc

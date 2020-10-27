@@ -1,0 +1,36 @@
+Testing 24_iterators/container_access.cc
+Grepping /home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/24_iterators/container_access.cc for the pattern "{[ 	]+dg-[-a-z]+[ 	]+.*[ 	]+}"
+Processing option:  dg-do 1 run { target c++17 } 
+replacement dg-process-target: `{ target c++17 }'
+dg-process-target-1: `{target c++17}'
+board_info target name 
+getting unix name
+board_info unix exists cflags
+board_info unix exists multilib_flags
+board_info unix multilib_flags 
+getting unix multilib_flags
+Limited to targets: *-*-*
+Will search for options  -std=c++17 -std=gnu++17 -std=c++1z -std=gnu++1z 
+Compiler flags are:  toolname    
+Checking "*-*-*" against "x86_64-pc-freebsd12.0"
+Looking for -std=c++17 to include in the compiler flags
+Looking for -std=gnu++17 to include in the compiler flags
+Looking for -std=c++1z to include in the compiler flags
+Looking for -std=gnu++1z to include in the compiler flags
+This is not a conditional match
+board_info target name 
+getting unix name
+board_info unix exists cflags
+board_info unix exists multilib_flags
+board_info unix multilib_flags 
+getting unix multilib_flags
+Limited to targets: *-*-*
+Will search for options  -std=c++2a -std=gnu++2a 
+Compiler flags are:  toolname    
+Checking "*-*-*" against "x86_64-pc-freebsd12.0"
+Looking for -std=c++2a to include in the compiler flags
+Looking for -std=gnu++2a to include in the compiler flags
+This is not a conditional match
+is-effective-target: c++17 0
+Processing option:  dg-options 2 "-std=gnu++17" 
+UNSUPPORTED: 24_iterators/container_access.cc

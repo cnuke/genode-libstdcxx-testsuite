@@ -1,0 +1,151 @@
+Testing type_info/fundamental.cc
+Grepping /home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/18_support/type_info/fundamental.cc for the pattern "{[ 	]+dg-[-a-z]+[ 	]+.*[ 	]+}"
+Processing option:  dg-do 1 run { target c++11 } 
+replacement dg-process-target: `{ target c++11 }'
+dg-process-target-1: `{target c++11}'
+board_info target name 
+getting unix name
+board_info unix exists cflags
+board_info unix exists multilib_flags
+board_info unix multilib_flags 
+getting unix multilib_flags
+Limited to targets: *-*-*
+Will search for options  -std=c++0x -std=gnu++0x -std=c++11 -std=gnu++11 
+Compiler flags are:  toolname    
+Checking "*-*-*" against "x86_64-pc-freebsd12.0"
+Looking for -std=c++0x to include in the compiler flags
+Looking for -std=gnu++0x to include in the compiler flags
+Looking for -std=c++11 to include in the compiler flags
+Looking for -std=gnu++11 to include in the compiler flags
+This is not a conditional match
+board_info target name 
+getting unix name
+board_info unix exists cflags
+board_info unix exists multilib_flags
+board_info unix multilib_flags 
+getting unix multilib_flags
+Limited to targets: *-*-*
+Will search for options  -std=c++14 -std=gnu++14 -std=c++14 -std=gnu++14 
+Compiler flags are:  toolname    
+Checking "*-*-*" against "x86_64-pc-freebsd12.0"
+Looking for -std=c++14 to include in the compiler flags
+Looking for -std=gnu++14 to include in the compiler flags
+Looking for -std=c++14 to include in the compiler flags
+Looking for -std=gnu++14 to include in the compiler flags
+This is not a conditional match
+board_info target name 
+getting unix name
+board_info unix exists cflags
+board_info unix exists multilib_flags
+board_info unix multilib_flags 
+getting unix multilib_flags
+Limited to targets: *-*-*
+Will search for options  
+Will exclude for options  -std=* 
+Compiler flags are:  toolname    
+Checking "*-*-*" against "x86_64-pc-freebsd12.0"
+Looking for -std=* to exclude in the compiler flags
+This is a conditional match
+is-effective-target: c++11 1
+Processing option:  dg-require-effective-target 2 dfp 
+check_cached_effective_target dfp: checking unix
+check_effective_target_dfp_nocache: compiling source
+check_compile tool: libstdc++ for dfp
+board_info target needs_status_wrapper 
+getting unix needs_status_wrapper
+board_info target exists gcc,timeout
+board_info target exists gcc,timeout
+board_info target name 
+getting unix name
+board_info target name 
+getting unix name
+board_info unix exists cflags_for_target
+calling is_remote host
+board_info build name 
+getting epyc name
+board_info host name 
+getting epyc name
+board is host, host is local
+Checking /usr/local/genode/tool/current/bin/genode-x86-g++
+file /usr/local/genode/tool/current/bin/genode-x86-g++ is executable
+board_info unix exists cflags
+board_info unix ldscript 
+getting unix ldscript
+board_info unix exists multilib_flags
+board_info unix multilib_flags 
+getting unix multilib_flags
+doing compile
+calling is_remote host
+board_info build name 
+getting epyc name
+board_info host name 
+getting epyc name
+board is host, host is local
+calling is_remote host
+board_info build name 
+getting epyc name
+board_info host name 
+getting epyc name
+board is host, host is local
+calling is_remote host
+board_info build name 
+getting epyc name
+board_info host name 
+getting epyc name
+board is host, host is local
+Invoking the compiler as /usr/local/genode/tool/current/bin/genode-x86-g++ -fmessage-length=0 -fno-show-column -ffunction-sections -fdata-sections -fPIC -O2 -m64  -DLOCALEDIR="." -nostdinc -I/home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx -I/home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx/std -I/home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx/c_global -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86_64/libc -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86_64 -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86/libc -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86 -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc-genode -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include/spec/x86_64 -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include/spec/x86 -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include/spec/64bit -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include -I/usr/local/genode/tool/current/x86_64-pc-elf/include/c++/8.3.0/x86_64-pc-elf/64 -I/usr/local/genode/tool/current/lib/gcc/x86_64-pc-elf/8.3.0/include -I/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/include/backward -I/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/util   -fno-diagnostics-show-caret -fdiagnostics-color=never -c -o dfp222873.o dfp222873.c
+Setting timeout to 600
+Executing on host: /usr/local/genode/tool/current/bin/genode-x86-g++ -fmessage-length=0 -fno-show-column -ffunction-sections -fdata-sections -fPIC -O2 -m64  -DLOCALEDIR="." -nostdinc -I/home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx -I/home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx/std -I/home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx/c_global -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86_64/libc -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86_64 -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86/libc -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86 -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc-genode -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include/spec/x86_64 -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include/spec/x86 -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include/spec/64bit -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include -I/usr/local/genode/tool/current/x86_64-pc-elf/include/c++/8.3.0/x86_64-pc-elf/64 -I/usr/local/genode/tool/current/lib/gcc/x86_64-pc-elf/8.3.0/include -I/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/include/backward -I/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/util   -fno-diagnostics-show-caret -fdiagnostics-color=never -c -o dfp222873.o dfp222873.c    (timeout = 600)
+calling is_remote host
+board_info build name 
+getting epyc name
+board_info host name 
+getting epyc name
+board is host, host is local
+spawn -ignore SIGHUP /usr/local/genode/tool/current/bin/genode-x86-g++ -fmessage-length=0 -fno-show-column -ffunction-sections -fdata-sections -fPIC -O2 -m64 -DLOCALEDIR="." -nostdinc -I/home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx -I/home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx/std -I/home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx/c_global -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86_64/libc -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86_64 -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86/libc -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86 -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc-genode -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include/spec/x86_64 -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include/spec/x86 -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include/spec/64bit -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include -I/usr/local/genode/tool/current/x86_64-pc-elf/include/c++/8.3.0/x86_64-pc-elf/64 -I/usr/local/genode/tool/current/lib/gcc/x86_64-pc-elf/8.3.0/include -I/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/include/backward -I/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/util -fno-diagnostics-show-caret -fdiagnostics-color=never -c -o dfp222873.o dfp222873.c
+pid is 225786 -225786
+dfp222873.c:2: error: unable to emulate 'DD'
+pid is -1
+waitres is 225786 exp6 0 1
+close result is 225786 exp6 0 1
+output is dfp222873.c:2: error: unable to emulate 'DD'
+ status 1
+calling is_remote host
+board_info build name 
+getting epyc name
+board_info host name 
+getting epyc name
+board is host, host is local
+Checking pattern "sparc-*-sunos*" with x86_64-pc-freebsd12.0
+Checking pattern "alpha*-*-*" with x86_64-pc-freebsd12.0
+Checking pattern "hppa*-*-hpux*" with x86_64-pc-freebsd12.0
+compiler exited with status 1
+output is:
+dfp222873.c:2: error: unable to emulate 'DD'
+
+board_info build exists name
+board_info build name 
+getting epyc name
+board_info epyc exists name
+board_info epyc exists protocol
+board_info epyc generic_name 
+getting epyc generic_name
+call_remote  file epyc delete dfp222873.o 
+board_info epyc file_transfer 
+getting epyc file_transfer
+board_info epyc connect 
+getting epyc connect
+looking for epyc_file
+looking for telnet_file
+looking for standard_file
+call_remote calling standard_file
+dest in proc standard_file is epyc
+calling is_remote epyc
+board_info build name 
+getting epyc name
+board is build, not remote
+check_effective_target_dfp_nocache: returning 0
+check_cached_effective_target cached list is now: dfp
+check_cached_effective_target dfp: returning 0 for unix
+is-effective-target: dfp 0
+UNSUPPORTED: 18_support/type_info/fundamental.cc

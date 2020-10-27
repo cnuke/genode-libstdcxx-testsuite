@@ -1,0 +1,52 @@
+Testing cons/move.cc
+Grepping /home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/27_io/basic_ifstream/cons/move.cc for the pattern "{[ 	]+dg-[-a-z]+[ 	]+.*[ 	]+}"
+Processing option:  dg-do 18 run { target c++11 } 
+replacement dg-process-target: `{ target c++11 }'
+dg-process-target-1: `{target c++11}'
+board_info target name 
+getting unix name
+board_info unix exists cflags
+board_info unix exists multilib_flags
+board_info unix multilib_flags 
+getting unix multilib_flags
+Limited to targets: *-*-*
+Will search for options  -std=c++0x -std=gnu++0x -std=c++11 -std=gnu++11 
+Compiler flags are:  toolname    
+Checking "*-*-*" against "x86_64-pc-freebsd12.0"
+Looking for -std=c++0x to include in the compiler flags
+Looking for -std=gnu++0x to include in the compiler flags
+Looking for -std=c++11 to include in the compiler flags
+Looking for -std=gnu++11 to include in the compiler flags
+This is not a conditional match
+board_info target name 
+getting unix name
+board_info unix exists cflags
+board_info unix exists multilib_flags
+board_info unix multilib_flags 
+getting unix multilib_flags
+Limited to targets: *-*-*
+Will search for options  -std=c++14 -std=gnu++14 -std=c++14 -std=gnu++14 
+Compiler flags are:  toolname    
+Checking "*-*-*" against "x86_64-pc-freebsd12.0"
+Looking for -std=c++14 to include in the compiler flags
+Looking for -std=gnu++14 to include in the compiler flags
+Looking for -std=c++14 to include in the compiler flags
+Looking for -std=gnu++14 to include in the compiler flags
+This is not a conditional match
+board_info target name 
+getting unix name
+board_info unix exists cflags
+board_info unix exists multilib_flags
+board_info unix multilib_flags 
+getting unix multilib_flags
+Limited to targets: *-*-*
+Will search for options  
+Will exclude for options  -std=* 
+Compiler flags are:  toolname    
+Checking "*-*-*" against "x86_64-pc-freebsd12.0"
+Looking for -std=* to exclude in the compiler flags
+This is a conditional match
+is-effective-target: c++11 1
+Processing option:  dg-require-fileio 19 "" 
+check_v3_target_fileio: using cached result
+UNSUPPORTED: 27_io/basic_ifstream/cons/move.cc

@@ -1,0 +1,269 @@
+Testing cmath/functions_global_c++17.cc
+Grepping /home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc for the pattern "{[ 	]+dg-[-a-z]+[ 	]+.*[ 	]+}"
+Processing option:  dg-options 18 "-std=gnu++17" 
+Processing option:  dg-do 19 compile 
+extra_tool_flags are:
+ -std=gnu++17
+board_info target needs_status_wrapper 
+getting unix needs_status_wrapper
+board_info target exists gcc,timeout
+board_info target exists gcc,timeout
+board_info target name 
+getting unix name
+board_info target name 
+getting unix name
+board_info unix exists cflags_for_target
+calling is_remote host
+board_info build name 
+getting epyc name
+board_info host name 
+getting epyc name
+board is host, host is local
+Checking /usr/local/genode/tool/current/bin/genode-x86-g++
+file /usr/local/genode/tool/current/bin/genode-x86-g++ is executable
+board_info unix exists cflags
+board_info unix ldscript 
+getting unix ldscript
+board_info unix exists multilib_flags
+board_info unix multilib_flags 
+getting unix multilib_flags
+doing compile
+calling is_remote host
+board_info build name 
+getting epyc name
+board_info host name 
+getting epyc name
+board is host, host is local
+calling is_remote host
+board_info build name 
+getting epyc name
+board_info host name 
+getting epyc name
+board is host, host is local
+calling is_remote host
+board_info build name 
+getting epyc name
+board_info host name 
+getting epyc name
+board is host, host is local
+Invoking the compiler as /usr/local/genode/tool/current/bin/genode-x86-g++ -fmessage-length=0 -fno-show-column -ffunction-sections -fdata-sections -fPIC -O2 -m64  -DLOCALEDIR="." -nostdinc -I/home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx -I/home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx/std -I/home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx/c_global -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86_64/libc -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86_64 -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86/libc -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86 -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc-genode -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include/spec/x86_64 -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include/spec/x86 -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include/spec/64bit -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include -I/usr/local/genode/tool/current/x86_64-pc-elf/include/c++/8.3.0/x86_64-pc-elf/64 -I/usr/local/genode/tool/current/lib/gcc/x86_64-pc-elf/8.3.0/include -I/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/include/backward -I/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/util /home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc    -std=gnu++17 -fno-diagnostics-show-caret -fdiagnostics-color=never -S -o functions_global_c++17.s
+Setting timeout to 600
+Executing on host: /usr/local/genode/tool/current/bin/genode-x86-g++ -fmessage-length=0 -fno-show-column -ffunction-sections -fdata-sections -fPIC -O2 -m64  -DLOCALEDIR="." -nostdinc -I/home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx -I/home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx/std -I/home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx/c_global -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86_64/libc -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86_64 -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86/libc -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86 -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc-genode -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include/spec/x86_64 -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include/spec/x86 -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include/spec/64bit -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include -I/usr/local/genode/tool/current/x86_64-pc-elf/include/c++/8.3.0/x86_64-pc-elf/64 -I/usr/local/genode/tool/current/lib/gcc/x86_64-pc-elf/8.3.0/include -I/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/include/backward -I/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/util /home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc    -std=gnu++17 -fno-diagnostics-show-caret -fdiagnostics-color=never -S -o functions_global_c++17.s    (timeout = 600)
+calling is_remote host
+board_info build name 
+getting epyc name
+board_info host name 
+getting epyc name
+board is host, host is local
+spawn -ignore SIGHUP /usr/local/genode/tool/current/bin/genode-x86-g++ -fmessage-length=0 -fno-show-column -ffunction-sections -fdata-sections -fPIC -O2 -m64 -DLOCALEDIR="." -nostdinc -I/home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx -I/home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx/std -I/home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx/c_global -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86_64/libc -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86_64 -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86/libc -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86 -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc-genode -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include/spec/x86_64 -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include/spec/x86 -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include/spec/64bit -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include -I/usr/local/genode/tool/current/x86_64-pc-elf/include/c++/8.3.0/x86_64-pc-elf/64 -I/usr/local/genode/tool/current/lib/gcc/x86_64-pc-elf/8.3.0/include -I/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/include/backward -I/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/util /home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc -std=gnu++17 -fno-diagnostics-show-caret -fdiagnostics-color=never -S -o functions_global_c++17.s
+pid is 52676 -52676
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:48: error: '::assoc_laguerre' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:49: error: '::assoc_laguerref' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:50: error: '::assoc_laguerrel' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:51: error: '::assoc_legendre' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:52: error: '::assoc_legendref' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:53: error: '::assoc_legendrel' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:54: error: '::beta' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:55: error: '::betaf' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:56: error: '::betal' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:57: error: '::comp_ellint_1' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:58: error: '::comp_ellint_1f' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:59: error: '::comp_ellint_1l' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:60: error: '::comp_ellint_2' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:61: error: '::comp_ellint_2f' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:62: error: '::comp_ellint_2l' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:63: error: '::comp_ellint_3' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:64: error: '::comp_ellint_3f' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:65: error: '::comp_ellint_3l' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:66: error: '::cyl_bessel_i' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:67: error: '::cyl_bessel_if' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:68: error: '::cyl_bessel_il' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:69: error: '::cyl_bessel_j' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:70: error: '::cyl_bessel_jf' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:71: error: '::cyl_bessel_jl' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:72: error: '::cyl_bessel_k' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:73: error: '::cyl_bessel_kf' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:74: error: '::cyl_bessel_kl' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:75: error: '::cyl_neumann' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:76: error: '::cyl_neumannf' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:77: error: '::cyl_neumannl' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:78: error: '::ellint_1' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:79: error: '::ellint_1f' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:80: error: '::ellint_1l' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:81: error: '::ellint_2' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:82: error: '::ellint_2f' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:83: error: '::ellint_2l' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:84: error: '::ellint_3' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:85: error: '::ellint_3f' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:86: error: '::ellint_3l' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:87: error: '::expint' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:88: error: '::expintf' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:89: error: '::expintl' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:90: error: '::hermite' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:91: error: '::hermitef' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:92: error: '::hermitel' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:93: error: '::laguerre' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:94: error: '::laguerref' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:95: error: '::laguerrel' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:96: error: '::legendre' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:97: error: '::legendref' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:98: error: '::legendrel' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:99: error: '::riemann_zeta' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:100: error: '::riemann_zetaf' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:101: error: '::riemann_zetal' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:102: error: '::sph_bessel' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:103: error: '::sph_besself' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:104: error: '::sph_bessell' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:105: error: '::sph_legendre' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:106: error: '::sph_legendref' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:107: error: '::sph_legendrel' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:108: error: '::sph_neumann' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:109: error: '::sph_neumannf' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:110: error: '::sph_neumannl' has not been declared
+pid is -1
+waitres is 52676 exp6 0 1
+close result is 52676 exp6 0 1
+output is /home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:48: error: '::assoc_laguerre' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:49: error: '::assoc_laguerref' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:50: error: '::assoc_laguerrel' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:51: error: '::assoc_legendre' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:52: error: '::assoc_legendref' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:53: error: '::assoc_legendrel' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:54: error: '::beta' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:55: error: '::betaf' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:56: error: '::betal' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:57: error: '::comp_ellint_1' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:58: error: '::comp_ellint_1f' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:59: error: '::comp_ellint_1l' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:60: error: '::comp_ellint_2' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:61: error: '::comp_ellint_2f' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:62: error: '::comp_ellint_2l' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:63: error: '::comp_ellint_3' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:64: error: '::comp_ellint_3f' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:65: error: '::comp_ellint_3l' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:66: error: '::cyl_bessel_i' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:67: error: '::cyl_bessel_if' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:68: error: '::cyl_bessel_il' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:69: error: '::cyl_bessel_j' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:70: error: '::cyl_bessel_jf' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:71: error: '::cyl_bessel_jl' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:72: error: '::cyl_bessel_k' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:73: error: '::cyl_bessel_kf' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:74: error: '::cyl_bessel_kl' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:75: error: '::cyl_neumann' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:76: error: '::cyl_neumannf' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:77: error: '::cyl_neumannl' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:78: error: '::ellint_1' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:79: error: '::ellint_1f' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:80: error: '::ellint_1l' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:81: error: '::ellint_2' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:82: error: '::ellint_2f' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:83: error: '::ellint_2l' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:84: error: '::ellint_3' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:85: error: '::ellint_3f' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:86: error: '::ellint_3l' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:87: error: '::expint' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:88: error: '::expintf' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:89: error: '::expintl' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:90: error: '::hermite' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:91: error: '::hermitef' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:92: error: '::hermitel' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:93: error: '::laguerre' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:94: error: '::laguerref' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:95: error: '::laguerrel' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:96: error: '::legendre' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:97: error: '::legendref' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:98: error: '::legendrel' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:99: error: '::riemann_zeta' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:100: error: '::riemann_zetaf' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:101: error: '::riemann_zetal' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:102: error: '::sph_bessel' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:103: error: '::sph_besself' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:104: error: '::sph_bessell' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:105: error: '::sph_legendre' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:106: error: '::sph_legendref' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:107: error: '::sph_legendrel' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:108: error: '::sph_neumann' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:109: error: '::sph_neumannf' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:110: error: '::sph_neumannl' has not been declared
+ status 1
+calling is_remote host
+board_info build name 
+getting epyc name
+board_info host name 
+getting epyc name
+board is host, host is local
+Checking pattern "sparc-*-sunos*" with x86_64-pc-freebsd12.0
+Checking pattern "alpha*-*-*" with x86_64-pc-freebsd12.0
+Checking pattern "hppa*-*-hpux*" with x86_64-pc-freebsd12.0
+compiler exited with status 1
+output is:
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:48: error: '::assoc_laguerre' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:49: error: '::assoc_laguerref' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:50: error: '::assoc_laguerrel' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:51: error: '::assoc_legendre' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:52: error: '::assoc_legendref' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:53: error: '::assoc_legendrel' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:54: error: '::beta' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:55: error: '::betaf' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:56: error: '::betal' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:57: error: '::comp_ellint_1' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:58: error: '::comp_ellint_1f' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:59: error: '::comp_ellint_1l' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:60: error: '::comp_ellint_2' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:61: error: '::comp_ellint_2f' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:62: error: '::comp_ellint_2l' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:63: error: '::comp_ellint_3' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:64: error: '::comp_ellint_3f' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:65: error: '::comp_ellint_3l' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:66: error: '::cyl_bessel_i' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:67: error: '::cyl_bessel_if' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:68: error: '::cyl_bessel_il' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:69: error: '::cyl_bessel_j' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:70: error: '::cyl_bessel_jf' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:71: error: '::cyl_bessel_jl' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:72: error: '::cyl_bessel_k' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:73: error: '::cyl_bessel_kf' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:74: error: '::cyl_bessel_kl' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:75: error: '::cyl_neumann' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:76: error: '::cyl_neumannf' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:77: error: '::cyl_neumannl' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:78: error: '::ellint_1' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:79: error: '::ellint_1f' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:80: error: '::ellint_1l' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:81: error: '::ellint_2' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:82: error: '::ellint_2f' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:83: error: '::ellint_2l' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:84: error: '::ellint_3' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:85: error: '::ellint_3f' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:86: error: '::ellint_3l' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:87: error: '::expint' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:88: error: '::expintf' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:89: error: '::expintl' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:90: error: '::hermite' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:91: error: '::hermitef' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:92: error: '::hermitel' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:93: error: '::laguerre' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:94: error: '::laguerref' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:95: error: '::laguerrel' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:96: error: '::legendre' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:97: error: '::legendref' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:98: error: '::legendrel' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:99: error: '::riemann_zeta' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:100: error: '::riemann_zetaf' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:101: error: '::riemann_zetal' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:102: error: '::sph_bessel' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:103: error: '::sph_besself' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:104: error: '::sph_bessell' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:105: error: '::sph_legendre' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:106: error: '::sph_legendref' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:107: error: '::sph_legendrel' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:108: error: '::sph_neumann' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:109: error: '::sph_neumannf' has not been declared
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/26_numerics/headers/cmath/functions_global_c++17.cc:110: error: '::sph_neumannl' has not been declared
+
+Checking "spu-*-*" against "x86_64-pc-freebsd12.0"
+Checking pattern "sparc-*-sunos*" with x86_64-pc-freebsd12.0
+Checking pattern "alpha*-*-*" with x86_64-pc-freebsd12.0
+Checking pattern "hppa*-*-hpux*" with x86_64-pc-freebsd12.0
+FAIL: 26_numerics/headers/cmath/functions_global_c++17.cc (test for excess errors)

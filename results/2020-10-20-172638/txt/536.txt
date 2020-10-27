@@ -1,0 +1,5 @@
+Testing char/4.cc
+Grepping /home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/25_algorithms/copy/streambuf_iterators/char/4.cc for the pattern "{[ 	]+dg-[-a-z]+[ 	]+.*[ 	]+}"
+Processing option:  dg-require-fileio 26 "" 
+check_v3_target_fileio: using cached result
+UNSUPPORTED: 25_algorithms/copy/streambuf_iterators/char/4.cc

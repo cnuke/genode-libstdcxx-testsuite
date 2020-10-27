@@ -1,0 +1,8 @@
+Testing bad_exception/23591_thread-1.c
+Grepping /home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/18_support/bad_exception/23591_thread-1.c for the pattern "{[ 	]+dg-[-a-z]+[ 	]+.*[ 	]+}"
+Processing option:  dg-require-sharedlib 1 "" 
+Processing option:  dg-skip-if 2 "invalid options for C" { *-*-* } { "-std=c++??" "-std=gnu++??" } 
+Processing option:  dg-options 3 "-g -O2 -pthread -ldl -x c -fvtable-verify=none -Wno-pedantic" { target *-*-linux* *-*-gnu* *-*-solaris2.1[2-9]* } 
+replacement dg-process-target: `{ target *-*-linux* *-*-gnu* *-*-solaris2.1[2-9]* }'
+dg-process-target-1: `{target *-*-linux* *-*-gnu* *-*-solaris2.1[2-9]*}'
+UNSUPPORTED: 18_support/bad_exception/23591_thread-1.c

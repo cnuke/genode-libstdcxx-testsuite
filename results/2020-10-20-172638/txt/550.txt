@@ -1,0 +1,26 @@
+Testing sample/81221.cc
+Grepping /home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/25_algorithms/sample/81221.cc for the pattern "{[ 	]+dg-[-a-z]+[ 	]+.*[ 	]+}"
+Processing option:  dg-options 18 "-std=gnu++17" 
+Processing option:  dg-do 19 compile { target c++17 } 
+replacement dg-process-target: `{ target c++17 }'
+dg-process-target-1: `{target c++17}'
+board_info target name 
+getting unix name
+board_info unix exists cflags
+board_info unix exists multilib_flags
+board_info unix multilib_flags 
+getting unix multilib_flags
+Limited to targets: *-*-*
+Will search for options  -std=c++17 -std=gnu++17 -std=c++1z -std=gnu++1z 
+Compiler flags are:  toolname -std=gnu++17  
+Checking "*-*-*" against "x86_64-pc-freebsd12.0"
+Looking for -std=c++17 to include in the compiler flags
+Looking for -std=gnu++17 to include in the compiler flags
+Found -std=gnu++17 to include in the compiler flags
+This is a conditional match
+is-effective-target: c++17 1
+Processing option:  dg-require-parallel-mode 20 "" 
+check_v3_target_parallel_mode: `'
+check_v3_target_parallel_mode: removing cached result
+check_v3_target_parallel_mode: 0
+UNSUPPORTED: 25_algorithms/sample/81221.cc

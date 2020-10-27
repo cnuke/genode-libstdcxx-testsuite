@@ -1,0 +1,158 @@
+Testing wchar_t/string_02.cc
+Grepping /home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/28_regex/iterators/regex_iterator/wchar_t/string_02.cc for the pattern "{[ 	]+dg-[-a-z]+[ 	]+.*[ 	]+}"
+Processing option:  dg-do 1 run { target c++11 } 
+replacement dg-process-target: `{ target c++11 }'
+dg-process-target-1: `{target c++11}'
+board_info target name 
+getting unix name
+board_info unix exists cflags
+board_info unix exists multilib_flags
+board_info unix multilib_flags 
+getting unix multilib_flags
+Limited to targets: *-*-*
+Will search for options  -std=c++0x -std=gnu++0x -std=c++11 -std=gnu++11 
+Compiler flags are:  toolname    
+Checking "*-*-*" against "x86_64-pc-freebsd12.0"
+Looking for -std=c++0x to include in the compiler flags
+Looking for -std=gnu++0x to include in the compiler flags
+Looking for -std=c++11 to include in the compiler flags
+Looking for -std=gnu++11 to include in the compiler flags
+This is not a conditional match
+board_info target name 
+getting unix name
+board_info unix exists cflags
+board_info unix exists multilib_flags
+board_info unix multilib_flags 
+getting unix multilib_flags
+Limited to targets: *-*-*
+Will search for options  -std=c++14 -std=gnu++14 -std=c++14 -std=gnu++14 
+Compiler flags are:  toolname    
+Checking "*-*-*" against "x86_64-pc-freebsd12.0"
+Looking for -std=c++14 to include in the compiler flags
+Looking for -std=gnu++14 to include in the compiler flags
+Looking for -std=c++14 to include in the compiler flags
+Looking for -std=gnu++14 to include in the compiler flags
+This is not a conditional match
+board_info target name 
+getting unix name
+board_info unix exists cflags
+board_info unix exists multilib_flags
+board_info unix multilib_flags 
+getting unix multilib_flags
+Limited to targets: *-*-*
+Will search for options  
+Will exclude for options  -std=* 
+Compiler flags are:  toolname    
+Checking "*-*-*" against "x86_64-pc-freebsd12.0"
+Looking for -std=* to exclude in the compiler flags
+This is a conditional match
+is-effective-target: c++11 1
+Processing option:  dg-require-namedlocale 2 "en_US.UTF-8" 
+board_info target name 
+getting unix name
+calling is_remote target
+board_info build name 
+getting epyc name
+board_info host name 
+getting epyc name
+calling is_remote unix
+board_info build name 
+getting epyc name
+board_info host name 
+getting epyc name
+board is unix, not remote
+board_info target exists is_simulator
+board_info unix exists name
+board_info unix name 
+getting unix name
+board_info unix exists name
+board_info unix exists protocol
+board_info unix protocol 
+getting unix protocol
+call_remote  load unix ./nlocale222873.x en_US.UTF-8 {} 
+board_info unix file_transfer 
+getting unix file_transfer
+board_info unix connect 
+getting unix connect
+looking for unix_load
+call_remote calling unix_load
+loading to unix
+calling is_remote unix
+board_info build name 
+getting epyc name
+board_info host name 
+getting epyc name
+board is unix, not remote
+Setting LD_LIBRARY_PATH to :
+Execution timeout is: 300
+calling is_remote unix
+board_info build name 
+getting epyc name
+board_info host name 
+getting epyc name
+board is unix, not remote
+remote_spawn is local
+board_info unix exists name
+board_info unix name 
+getting unix name
+spawning command ./run-core ./nlocale222873.x en_US.UTF-8
+spawn [open ...]
+setting board_info(unix,fileid) to exp9
+board_info unix exists name
+board_info unix name 
+getting unix name
+board_info unix exists name
+board_info unix exists protocol
+board_info unix protocol 
+getting unix protocol
+call_remote  wait unix 300 
+board_info unix file_transfer 
+getting unix file_transfer
+board_info unix connect 
+getting unix connect
+looking for unix_wait
+looking for unix_wait
+looking for telnet_wait
+looking for standard_wait
+call_remote calling standard_wait
+board_info target exists gcc,timeout
+board_info target exists gcc,timeout
+board_info unix fileid 
+getting unix fileid
+spawn ./core
+Genode 15.05-6023-g5c2e0a322 <local changes>[0m
+17592186044415 MiB RAM and 8997 caps assigned to init[0m
+[init -> nlocale222873.x] locale 'en_US.UTF-8' not supported[0m
+[init] child "nlocale222873.x" exited with exit value 1[0m[0m
+board_info unix exists fileid_origid
+board_info unix fileid 
+getting unix fileid
+board_info unix fileid_origid 
+getting unix fileid_origid
+exp9 file6
+close result is child process exited abnormally
+board_info unix exists name
+board_info unix name 
+getting unix name
+board_info unix exists name
+board_info unix exists protocol
+board_info unix protocol 
+getting unix protocol
+call_remote  close unix  
+board_info unix connect 
+getting unix connect
+call_remote calling standard_close
+board_info unix exists fileid
+board_info unix file_transfer 
+getting unix file_transfer
+board_info unix name 
+getting unix name
+Executed ./nlocale222873.x, status 1
+spawn ./core
+Genode 15.05-6023-g5c2e0a322 <local changes>[0m
+17592186044415 MiB RAM and 8997 caps assigned to init[0m
+[init -> nlocale222873.x] locale 'en_US.UTF-8' not supported[0m
+[init] child "nlocale222873.x" exited with exit value 1[0m[0m
+
+check_v3_target_namedlocale <en_US.UTF-8>: status is <fail>
+UNSUPPORTED: 28_regex/iterators/regex_iterator/wchar_t/string_02.cc

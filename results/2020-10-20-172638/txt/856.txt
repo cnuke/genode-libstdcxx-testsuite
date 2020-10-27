@@ -1,0 +1,6 @@
+Testing decimal/pr54036-3.cc
+Grepping /home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/decimal/pr54036-3.cc for the pattern "{[ 	]+dg-[-a-z]+[ 	]+.*[ 	]+}"
+Processing option:  dg-require-effective-target 18 dfp 
+check_cached_effective_target dfp: returning 0 for unix
+is-effective-target: dfp 0
+UNSUPPORTED: decimal/pr54036-3.cc

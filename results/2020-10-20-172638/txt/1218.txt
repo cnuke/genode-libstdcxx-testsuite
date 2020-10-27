@@ -1,0 +1,147 @@
+Testing 12_ellint_2/compile_2.cc
+Grepping /home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/special_functions/12_ellint_2/compile_2.cc for the pattern "{[ 	]+dg-[-a-z]+[ 	]+.*[ 	]+}"
+Processing option:  dg-do 1 compile { target c++11 } 
+replacement dg-process-target: `{ target c++11 }'
+dg-process-target-1: `{target c++11}'
+board_info target name 
+getting unix name
+board_info unix exists cflags
+board_info unix exists multilib_flags
+board_info unix multilib_flags 
+getting unix multilib_flags
+Limited to targets: *-*-*
+Will search for options  -std=c++0x -std=gnu++0x -std=c++11 -std=gnu++11 
+Compiler flags are:  toolname    
+Checking "*-*-*" against "x86_64-pc-freebsd12.0"
+Looking for -std=c++0x to include in the compiler flags
+Looking for -std=gnu++0x to include in the compiler flags
+Looking for -std=c++11 to include in the compiler flags
+Looking for -std=gnu++11 to include in the compiler flags
+This is not a conditional match
+board_info target name 
+getting unix name
+board_info unix exists cflags
+board_info unix exists multilib_flags
+board_info unix multilib_flags 
+getting unix multilib_flags
+Limited to targets: *-*-*
+Will search for options  -std=c++14 -std=gnu++14 -std=c++14 -std=gnu++14 
+Compiler flags are:  toolname    
+Checking "*-*-*" against "x86_64-pc-freebsd12.0"
+Looking for -std=c++14 to include in the compiler flags
+Looking for -std=gnu++14 to include in the compiler flags
+Looking for -std=c++14 to include in the compiler flags
+Looking for -std=gnu++14 to include in the compiler flags
+This is not a conditional match
+board_info target name 
+getting unix name
+board_info unix exists cflags
+board_info unix exists multilib_flags
+board_info unix multilib_flags 
+getting unix multilib_flags
+Limited to targets: *-*-*
+Will search for options  
+Will exclude for options  -std=* 
+Compiler flags are:  toolname    
+Checking "*-*-*" against "x86_64-pc-freebsd12.0"
+Looking for -std=* to exclude in the compiler flags
+This is a conditional match
+is-effective-target: c++11 1
+Processing option:  dg-options 2 "-D__STDCPP_WANT_MATH_SPEC_FUNCS__" 
+extra_tool_flags are:
+ -D__STDCPP_WANT_MATH_SPEC_FUNCS__
+board_info target needs_status_wrapper 
+getting unix needs_status_wrapper
+board_info target exists gcc,timeout
+board_info target exists gcc,timeout
+board_info target name 
+getting unix name
+board_info target name 
+getting unix name
+board_info unix exists cflags_for_target
+calling is_remote host
+board_info build name 
+getting epyc name
+board_info host name 
+getting epyc name
+board is host, host is local
+Checking /usr/local/genode/tool/current/bin/genode-x86-g++
+file /usr/local/genode/tool/current/bin/genode-x86-g++ is executable
+board_info unix exists cflags
+board_info unix ldscript 
+getting unix ldscript
+board_info unix exists multilib_flags
+board_info unix multilib_flags 
+getting unix multilib_flags
+doing compile
+calling is_remote host
+board_info build name 
+getting epyc name
+board_info host name 
+getting epyc name
+board is host, host is local
+calling is_remote host
+board_info build name 
+getting epyc name
+board_info host name 
+getting epyc name
+board is host, host is local
+calling is_remote host
+board_info build name 
+getting epyc name
+board_info host name 
+getting epyc name
+board is host, host is local
+Invoking the compiler as /usr/local/genode/tool/current/bin/genode-x86-g++ -fmessage-length=0 -fno-show-column -ffunction-sections -fdata-sections -fPIC -O2 -m64  -DLOCALEDIR="." -nostdinc -I/home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx -I/home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx/std -I/home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx/c_global -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86_64/libc -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86_64 -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86/libc -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86 -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc-genode -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include/spec/x86_64 -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include/spec/x86 -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include/spec/64bit -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include -I/usr/local/genode/tool/current/x86_64-pc-elf/include/c++/8.3.0/x86_64-pc-elf/64 -I/usr/local/genode/tool/current/lib/gcc/x86_64-pc-elf/8.3.0/include -I/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/include/backward -I/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/util /home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/special_functions/12_ellint_2/compile_2.cc    -D__STDCPP_WANT_MATH_SPEC_FUNCS__ -fno-diagnostics-show-caret -fdiagnostics-color=never -S -o compile_2.s
+Setting timeout to 600
+Executing on host: /usr/local/genode/tool/current/bin/genode-x86-g++ -fmessage-length=0 -fno-show-column -ffunction-sections -fdata-sections -fPIC -O2 -m64  -DLOCALEDIR="." -nostdinc -I/home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx -I/home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx/std -I/home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx/c_global -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86_64/libc -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86_64 -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86/libc -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86 -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc-genode -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include/spec/x86_64 -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include/spec/x86 -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include/spec/64bit -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include -I/usr/local/genode/tool/current/x86_64-pc-elf/include/c++/8.3.0/x86_64-pc-elf/64 -I/usr/local/genode/tool/current/lib/gcc/x86_64-pc-elf/8.3.0/include -I/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/include/backward -I/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/util /home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/special_functions/12_ellint_2/compile_2.cc    -D__STDCPP_WANT_MATH_SPEC_FUNCS__ -fno-diagnostics-show-caret -fdiagnostics-color=never -S -o compile_2.s    (timeout = 600)
+calling is_remote host
+board_info build name 
+getting epyc name
+board_info host name 
+getting epyc name
+board is host, host is local
+spawn -ignore SIGHUP /usr/local/genode/tool/current/bin/genode-x86-g++ -fmessage-length=0 -fno-show-column -ffunction-sections -fdata-sections -fPIC -O2 -m64 -DLOCALEDIR="." -nostdinc -I/home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx -I/home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx/std -I/home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx/c_global -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86_64/libc -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86_64 -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86/libc -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86 -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc-genode -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include/spec/x86_64 -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include/spec/x86 -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include/spec/64bit -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include -I/usr/local/genode/tool/current/x86_64-pc-elf/include/c++/8.3.0/x86_64-pc-elf/64 -I/usr/local/genode/tool/current/lib/gcc/x86_64-pc-elf/8.3.0/include -I/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/include/backward -I/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/util /home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/special_functions/12_ellint_2/compile_2.cc -D__STDCPP_WANT_MATH_SPEC_FUNCS__ -fno-diagnostics-show-caret -fdiagnostics-color=never -S -o compile_2.s
+pid is 179278 -179278
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/special_functions/12_ellint_2/compile_2.cc: In function 'void test01()':
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/special_functions/12_ellint_2/compile_2.cc:32: error: 'ellint_2' was not declared in this scope
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/special_functions/12_ellint_2/compile_2.cc:32: note: suggested alternative: 'lrintl'
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/special_functions/12_ellint_2/compile_2.cc:33: error: 'ellint_2f' was not declared in this scope
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/special_functions/12_ellint_2/compile_2.cc:33: note: suggested alternative: 'lrintf'
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/special_functions/12_ellint_2/compile_2.cc:36: error: 'ellint_2l' was not declared in this scope
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/special_functions/12_ellint_2/compile_2.cc:36: note: suggested alternative: 'lrintl'
+pid is -1
+waitres is 179278 exp6 0 1
+close result is 179278 exp6 0 1
+output is /home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/special_functions/12_ellint_2/compile_2.cc: In function 'void test01()':
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/special_functions/12_ellint_2/compile_2.cc:32: error: 'ellint_2' was not declared in this scope
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/special_functions/12_ellint_2/compile_2.cc:32: note: suggested alternative: 'lrintl'
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/special_functions/12_ellint_2/compile_2.cc:33: error: 'ellint_2f' was not declared in this scope
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/special_functions/12_ellint_2/compile_2.cc:33: note: suggested alternative: 'lrintf'
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/special_functions/12_ellint_2/compile_2.cc:36: error: 'ellint_2l' was not declared in this scope
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/special_functions/12_ellint_2/compile_2.cc:36: note: suggested alternative: 'lrintl'
+ status 1
+calling is_remote host
+board_info build name 
+getting epyc name
+board_info host name 
+getting epyc name
+board is host, host is local
+Checking pattern "sparc-*-sunos*" with x86_64-pc-freebsd12.0
+Checking pattern "alpha*-*-*" with x86_64-pc-freebsd12.0
+Checking pattern "hppa*-*-hpux*" with x86_64-pc-freebsd12.0
+compiler exited with status 1
+output is:
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/special_functions/12_ellint_2/compile_2.cc: In function 'void test01()':
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/special_functions/12_ellint_2/compile_2.cc:32: error: 'ellint_2' was not declared in this scope
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/special_functions/12_ellint_2/compile_2.cc:32: note: suggested alternative: 'lrintl'
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/special_functions/12_ellint_2/compile_2.cc:33: error: 'ellint_2f' was not declared in this scope
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/special_functions/12_ellint_2/compile_2.cc:33: note: suggested alternative: 'lrintf'
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/special_functions/12_ellint_2/compile_2.cc:36: error: 'ellint_2l' was not declared in this scope
+/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/special_functions/12_ellint_2/compile_2.cc:36: note: suggested alternative: 'lrintl'
+
+Checking "spu-*-*" against "x86_64-pc-freebsd12.0"
+Checking pattern "sparc-*-sunos*" with x86_64-pc-freebsd12.0
+Checking pattern "alpha*-*-*" with x86_64-pc-freebsd12.0
+Checking pattern "hppa*-*-hpux*" with x86_64-pc-freebsd12.0
+FAIL: special_functions/12_ellint_2/compile_2.cc (test for excess errors)

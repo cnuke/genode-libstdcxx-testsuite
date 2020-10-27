@@ -1,0 +1,5 @@
+Testing char/2.cc
+Grepping /home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/25_algorithms/find/istreambuf_iterators/char/2.cc for the pattern "{[ 	]+dg-[-a-z]+[ 	]+.*[ 	]+}"
+Processing option:  dg-require-fileio 25 "" 
+check_v3_target_fileio: using cached result
+UNSUPPORTED: 25_algorithms/find/istreambuf_iterators/char/2.cc

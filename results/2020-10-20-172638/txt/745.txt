@@ -1,0 +1,203 @@
+Testing modifiers/swap.cc
+Grepping /home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/27_io/filesystem/path/modifiers/swap.cc for the pattern "{[ 	]+dg-[-a-z]+[ 	]+.*[ 	]+}"
+Processing option:  dg-options 1 "-std=gnu++17 -lstdc++fs" 
+Processing option:  dg-do 2 run { target c++17 } 
+replacement dg-process-target: `{ target c++17 }'
+dg-process-target-1: `{target c++17}'
+board_info target name 
+getting unix name
+board_info unix exists cflags
+board_info unix exists multilib_flags
+board_info unix multilib_flags 
+getting unix multilib_flags
+Limited to targets: *-*-*
+Will search for options  -std=c++17 -std=gnu++17 -std=c++1z -std=gnu++1z 
+Compiler flags are:  toolname -std=gnu++17 -lstdc++fs  
+Checking "*-*-*" against "x86_64-pc-freebsd12.0"
+Looking for -std=c++17 to include in the compiler flags
+Looking for -std=gnu++17 to include in the compiler flags
+Found -std=gnu++17 to include in the compiler flags
+This is a conditional match
+is-effective-target: c++17 1
+Processing option:  dg-require-filesystem-ts 3 "" 
+check_v3_target_filesystem_ts: `'
+check_v3_target_filesystem_ts: removing cached result
+board_info target needs_status_wrapper 
+getting unix needs_status_wrapper
+board_info target exists gcc,timeout
+board_info target exists gcc,timeout
+board_info target name 
+getting unix name
+board_info target name 
+getting unix name
+board_info unix exists cflags_for_target
+calling is_remote host
+board_info build name 
+getting epyc name
+board_info host name 
+getting epyc name
+board is host, host is local
+Checking /usr/local/genode/tool/current/bin/genode-x86-g++
+file /usr/local/genode/tool/current/bin/genode-x86-g++ is executable
+board_info unix exists cflags
+board_info unix ldscript 
+getting unix ldscript
+board_info unix exists multilib_flags
+board_info unix multilib_flags 
+getting unix multilib_flags
+doing compile
+calling is_remote host
+board_info build name 
+getting epyc name
+board_info host name 
+getting epyc name
+board is host, host is local
+calling is_remote host
+board_info build name 
+getting epyc name
+board_info host name 
+getting epyc name
+board is host, host is local
+calling is_remote host
+board_info build name 
+getting epyc name
+board_info host name 
+getting epyc name
+board is host, host is local
+Invoking the compiler as /usr/local/genode/tool/current/bin/genode-x86-g++ -fmessage-length=0 -fno-show-column -ffunction-sections -fdata-sections -fPIC -O2 -m64  -DLOCALEDIR="."  -Werror -nostdinc -I/home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx -I/home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx/std -I/home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx/c_global -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86_64/libc -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86_64 -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86/libc -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86 -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc-genode -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include/spec/x86_64 -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include/spec/x86 -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include/spec/64bit -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include -I/usr/local/genode/tool/current/x86_64-pc-elf/include/c++/8.3.0/x86_64-pc-elf/64 -I/usr/local/genode/tool/current/lib/gcc/x86_64-pc-elf/8.3.0/include -I/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/include/backward -I/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/util filesystem_ts222873.cc   -fno-diagnostics-show-caret -fdiagnostics-color=never -E -o /dev/null
+Setting timeout to 600
+Executing on host: /usr/local/genode/tool/current/bin/genode-x86-g++ -fmessage-length=0 -fno-show-column -ffunction-sections -fdata-sections -fPIC -O2 -m64  -DLOCALEDIR="."  -Werror -nostdinc -I/home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx -I/home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx/std -I/home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx/c_global -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86_64/libc -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86_64 -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86/libc -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86 -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc-genode -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include/spec/x86_64 -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include/spec/x86 -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include/spec/64bit -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include -I/usr/local/genode/tool/current/x86_64-pc-elf/include/c++/8.3.0/x86_64-pc-elf/64 -I/usr/local/genode/tool/current/lib/gcc/x86_64-pc-elf/8.3.0/include -I/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/include/backward -I/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/util filesystem_ts222873.cc   -fno-diagnostics-show-caret -fdiagnostics-color=never -E -o /dev/null    (timeout = 600)
+calling is_remote host
+board_info build name 
+getting epyc name
+board_info host name 
+getting epyc name
+board is host, host is local
+spawn -ignore SIGHUP /usr/local/genode/tool/current/bin/genode-x86-g++ -fmessage-length=0 -fno-show-column -ffunction-sections -fdata-sections -fPIC -O2 -m64 -DLOCALEDIR="." -Werror -nostdinc -I/home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx -I/home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx/std -I/home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx/c_global -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86_64/libc -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86_64 -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86/libc -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86 -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc-genode -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include/spec/x86_64 -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include/spec/x86 -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include/spec/64bit -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include -I/usr/local/genode/tool/current/x86_64-pc-elf/include/c++/8.3.0/x86_64-pc-elf/64 -I/usr/local/genode/tool/current/lib/gcc/x86_64-pc-elf/8.3.0/include -I/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/include/backward -I/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/util filesystem_ts222873.cc -fno-diagnostics-show-caret -fdiagnostics-color=never -E -o /dev/null
+pid is 80336 -80336
+pid is -1
+waitres is 80336 exp6 0 0
+output is  status 0
+calling is_remote host
+board_info build name 
+getting epyc name
+board_info host name 
+getting epyc name
+board is host, host is local
+Checking pattern "sparc-*-sunos*" with x86_64-pc-freebsd12.0
+Checking pattern "alpha*-*-*" with x86_64-pc-freebsd12.0
+Checking pattern "hppa*-*-hpux*" with x86_64-pc-freebsd12.0
+check_v3_target_filesystem_ts: 1
+board_info build exists name
+board_info build name 
+getting epyc name
+board_info epyc exists name
+board_info epyc exists protocol
+board_info epyc generic_name 
+getting epyc generic_name
+call_remote  file epyc delete ./swap.exe 
+board_info epyc file_transfer 
+getting epyc file_transfer
+board_info epyc connect 
+getting epyc connect
+looking for epyc_file
+looking for telnet_file
+looking for standard_file
+call_remote calling standard_file
+dest in proc standard_file is epyc
+calling is_remote epyc
+board_info build name 
+getting epyc name
+board is build, not remote
+extra_tool_flags are:
+ -std=gnu++17 -lstdc++fs
+board_info target needs_status_wrapper 
+getting unix needs_status_wrapper
+board_info target exists gcc,timeout
+board_info target exists gcc,timeout
+board_info target name 
+getting unix name
+board_info target name 
+getting unix name
+board_info unix exists cflags_for_target
+calling is_remote host
+board_info build name 
+getting epyc name
+board_info host name 
+getting epyc name
+board is host, host is local
+Checking /usr/local/genode/tool/current/bin/genode-x86-g++
+file /usr/local/genode/tool/current/bin/genode-x86-g++ is executable
+board_info unix exists cflags
+board_info unix exists ldflags
+board_info unix ldscript 
+getting unix ldscript
+board_info unix exists libs
+board_info unix exists mathlib
+board_info unix exists remote_link
+board_info unix exists output_format
+board_info unix exists multilib_flags
+board_info unix multilib_flags 
+getting unix multilib_flags
+doing compile
+calling is_remote host
+board_info build name 
+getting epyc name
+board_info host name 
+getting epyc name
+board is host, host is local
+calling is_remote host
+board_info build name 
+getting epyc name
+board_info host name 
+getting epyc name
+board is host, host is local
+calling is_remote host
+board_info build name 
+getting epyc name
+board_info host name 
+getting epyc name
+board is host, host is local
+Invoking the compiler as /usr/local/genode/tool/current/bin/genode-x86-g++ -fmessage-length=0 -fno-show-column -ffunction-sections -fdata-sections -fPIC -O2 -m64  -DLOCALEDIR="." -nostdinc -I/home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx -I/home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx/std -I/home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx/c_global -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86_64/libc -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86_64 -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86/libc -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86 -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc-genode -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include/spec/x86_64 -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include/spec/x86 -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include/spec/64bit -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include -I/usr/local/genode/tool/current/x86_64-pc-elf/include/c++/8.3.0/x86_64-pc-elf/64 -I/usr/local/genode/tool/current/lib/gcc/x86_64-pc-elf/8.3.0/include -I/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/include/backward -I/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/util /home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/27_io/filesystem/path/modifiers/swap.cc    -std=gnu++17 -lstdc++fs -fno-diagnostics-show-caret -fdiagnostics-color=never ./libtestc++.a -Wl,-melf_x86_64 -Wl,-gc-sections -Wl,-z -Wl,max-page-size=0x1000 -Wl,-Ttext=0x01000000 -Wl,--dynamic-linker=ld.lib.so -Wl,--dynamic-list=/home/jws/develop/genode/repos/base/src/ld/genode_dyn.dl -Wl,--eh-frame-hdr -Wl,-rpath-link=. -Wl,-T -Wl,/home/jws/develop/genode/repos/base/src/ld/genode_dyn.ld -l:libc.lib.so -l:libm.lib.so -l:posix.lib.so -nostdlib /usr/local/genode/tool/current/lib/gcc/x86_64-pc-elf/8.3.0/64/libgcc.a -L/home/jws/develop/genode-libstdcxx-testsuite/var/abi -l:stdcxx.lib.so -l:ld.lib.so  -lm  -o ./swap.exe
+Setting timeout to 600
+Executing on host: /usr/local/genode/tool/current/bin/genode-x86-g++ -fmessage-length=0 -fno-show-column -ffunction-sections -fdata-sections -fPIC -O2 -m64  -DLOCALEDIR="." -nostdinc -I/home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx -I/home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx/std -I/home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx/c_global -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86_64/libc -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86_64 -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86/libc -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86 -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc-genode -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include/spec/x86_64 -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include/spec/x86 -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include/spec/64bit -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include -I/usr/local/genode/tool/current/x86_64-pc-elf/include/c++/8.3.0/x86_64-pc-elf/64 -I/usr/local/genode/tool/current/lib/gcc/x86_64-pc-elf/8.3.0/include -I/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/include/backward -I/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/util /home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/27_io/filesystem/path/modifiers/swap.cc    -std=gnu++17 -lstdc++fs -fno-diagnostics-show-caret -fdiagnostics-color=never ./libtestc++.a -Wl,-melf_x86_64 -Wl,-gc-sections -Wl,-z -Wl,max-page-size=0x1000 -Wl,-Ttext=0x01000000 -Wl,--dynamic-linker=ld.lib.so -Wl,--dynamic-list=/home/jws/develop/genode/repos/base/src/ld/genode_dyn.dl -Wl,--eh-frame-hdr -Wl,-rpath-link=. -Wl,-T -Wl,/home/jws/develop/genode/repos/base/src/ld/genode_dyn.ld -l:libc.lib.so -l:libm.lib.so -l:posix.lib.so -nostdlib /usr/local/genode/tool/current/lib/gcc/x86_64-pc-elf/8.3.0/64/libgcc.a -L/home/jws/develop/genode-libstdcxx-testsuite/var/abi -l:stdcxx.lib.so -l:ld.lib.so  -lm  -o ./swap.exe    (timeout = 600)
+calling is_remote host
+board_info build name 
+getting epyc name
+board_info host name 
+getting epyc name
+board is host, host is local
+spawn -ignore SIGHUP /usr/local/genode/tool/current/bin/genode-x86-g++ -fmessage-length=0 -fno-show-column -ffunction-sections -fdata-sections -fPIC -O2 -m64 -DLOCALEDIR="." -nostdinc -I/home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx -I/home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx/std -I/home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx/c_global -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86_64/libc -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86_64 -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86/libc -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86 -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc-genode -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include/spec/x86_64 -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include/spec/x86 -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include/spec/64bit -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include -I/usr/local/genode/tool/current/x86_64-pc-elf/include/c++/8.3.0/x86_64-pc-elf/64 -I/usr/local/genode/tool/current/lib/gcc/x86_64-pc-elf/8.3.0/include -I/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/include/backward -I/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/util /home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/27_io/filesystem/path/modifiers/swap.cc -std=gnu++17 -lstdc++fs -fno-diagnostics-show-caret -fdiagnostics-color=never ./libtestc++.a -Wl,-melf_x86_64 -Wl,-gc-sections -Wl,-z -Wl,max-page-size=0x1000 -Wl,-Ttext=0x01000000 -Wl,--dynamic-linker=ld.lib.so -Wl,--dynamic-list=/home/jws/develop/genode/repos/base/src/ld/genode_dyn.dl -Wl,--eh-frame-hdr -Wl,-rpath-link=. -Wl,-T -Wl,/home/jws/develop/genode/repos/base/src/ld/genode_dyn.ld -l:libc.lib.so -l:libm.lib.so -l:posix.lib.so -nostdlib /usr/local/genode/tool/current/lib/gcc/x86_64-pc-elf/8.3.0/64/libgcc.a -L/home/jws/develop/genode-libstdcxx-testsuite/var/abi -l:stdcxx.lib.so -l:ld.lib.so -lm -o ./swap.exe
+pid is 80340 -80340
+/usr/local/genode/tool/19.05/bin/../lib/gcc/x86_64-pc-elf/8.3.0/../../../../x86_64-pc-elf/bin/ld: cannot find -lstdc++fs
+collect2: error: ld returned 1 exit status
+pid is -1
+waitres is 80340 exp6 0 1
+close result is 80340 exp6 0 1
+output is /usr/local/genode/tool/19.05/bin/../lib/gcc/x86_64-pc-elf/8.3.0/../../../../x86_64-pc-elf/bin/ld: cannot find -lstdc++fs
+collect2: error: ld returned 1 exit status
+ status 1
+calling is_remote host
+board_info build name 
+getting epyc name
+board_info host name 
+getting epyc name
+board is host, host is local
+Checking pattern "sparc-*-sunos*" with x86_64-pc-freebsd12.0
+Checking pattern "alpha*-*-*" with x86_64-pc-freebsd12.0
+Checking pattern "hppa*-*-hpux*" with x86_64-pc-freebsd12.0
+compiler exited with status 1
+output is:
+/usr/local/genode/tool/19.05/bin/../lib/gcc/x86_64-pc-elf/8.3.0/../../../../x86_64-pc-elf/bin/ld: cannot find -lstdc++fs
+collect2: error: ld returned 1 exit status
+
+Checking "spu-*-*" against "x86_64-pc-freebsd12.0"
+Checking pattern "sparc-*-sunos*" with x86_64-pc-freebsd12.0
+Checking pattern "alpha*-*-*" with x86_64-pc-freebsd12.0
+Checking pattern "hppa*-*-hpux*" with x86_64-pc-freebsd12.0
+FAIL: 27_io/filesystem/path/modifiers/swap.cc (test for excess errors)
+Excess errors:
+/usr/local/genode/tool/19.05/bin/../lib/gcc/x86_64-pc-elf/8.3.0/../../../../x86_64-pc-elf/bin/ld: cannot find -lstdc++fs
+collect2: error: ld returned 1 exit status
+
+UNRESOLVED: 27_io/filesystem/path/modifiers/swap.cc compilation failed to produce executable

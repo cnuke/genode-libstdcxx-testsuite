@@ -1,0 +1,8 @@
+Testing packaged_task/forced_unwind.cc
+Grepping /home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/30_threads/packaged_task/forced_unwind.cc for the pattern "{[ 	]+dg-[-a-z]+[ 	]+.*[ 	]+}"
+Processing option:  dg-do 1 run { target *-*-linux* *-*-gnu* } 
+replacement dg-process-target: `{ target *-*-linux* *-*-gnu* }'
+dg-process-target-1: `{target *-*-linux* *-*-gnu*}'
+Processing option:  dg-options 2 "  " 
+Processing option:  dg-require-effective-target 3 c++11 
+UNSUPPORTED: 30_threads/packaged_task/forced_unwind.cc

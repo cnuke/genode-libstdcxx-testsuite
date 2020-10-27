@@ -1,0 +1,5 @@
+Testing char/11.cc
+Grepping /home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/21_strings/basic_string/inserters_extractors/char/11.cc for the pattern "{[ 	]+dg-[-a-z]+[ 	]+.*[ 	]+}"
+Processing option:  dg-require-fileio 20 "" 
+check_v3_target_fileio: using cached result
+UNSUPPORTED: 21_strings/basic_string/inserters_extractors/char/11.cc

@@ -1,0 +1,6 @@
+Testing c++1998/49745.cc
+Grepping /home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/17_intro/headers/c++1998/49745.cc for the pattern "{[ 	]+dg-[-a-z]+[ 	]+.*[ 	]+}"
+Processing option:  dg-do 1 compile { target *-*-linux* *-*-gnu* } 
+replacement dg-process-target: `{ target *-*-linux* *-*-gnu* }'
+dg-process-target-1: `{target *-*-linux* *-*-gnu*}'
+UNSUPPORTED: 17_intro/headers/c++1998/49745.cc

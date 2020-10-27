@@ -1,0 +1,5 @@
+Testing char/5.cc
+Grepping /home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/27_io/basic_istream/getline/char/5.cc for the pattern "{[ 	]+dg-[-a-z]+[ 	]+.*[ 	]+}"
+Processing option:  dg-require-fileio 20 "" 
+check_v3_target_fileio: using cached result
+UNSUPPORTED: 27_io/basic_istream/getline/char/5.cc

@@ -1,0 +1,153 @@
+Testing c++2011/stdc++_multiple_inclusion.cc
+Grepping /home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/17_intro/headers/c++2011/stdc++_multiple_inclusion.cc for the pattern "{[ 	]+dg-[-a-z]+[ 	]+.*[ 	]+}"
+Processing option:  dg-options 2 "-std=gnu++11" 
+Processing option:  dg-additional-options 3 "-Wall -Wsystem-headers" { target *-*-freebsd* *-*-dragonfly* } 
+replacement dg-process-target: `{ target *-*-freebsd* *-*-dragonfly* }'
+dg-process-target-1: `{target *-*-freebsd* *-*-dragonfly*}'
+Processing option:  dg-do 4 compile 
+extra_tool_flags are:
+ -std=gnu++11 -Wall -Wsystem-headers
+board_info target needs_status_wrapper 
+getting unix needs_status_wrapper
+board_info target exists gcc,timeout
+board_info target exists gcc,timeout
+board_info target name 
+getting unix name
+board_info target name 
+getting unix name
+board_info unix exists cflags_for_target
+calling is_remote host
+board_info build name 
+getting epyc name
+board_info host name 
+getting epyc name
+board is host, host is local
+Checking /usr/local/genode/tool/current/bin/genode-x86-g++
+file /usr/local/genode/tool/current/bin/genode-x86-g++ is executable
+board_info unix exists cflags
+board_info unix ldscript 
+getting unix ldscript
+board_info unix exists multilib_flags
+board_info unix multilib_flags 
+getting unix multilib_flags
+doing compile
+calling is_remote host
+board_info build name 
+getting epyc name
+board_info host name 
+getting epyc name
+board is host, host is local
+calling is_remote host
+board_info build name 
+getting epyc name
+board_info host name 
+getting epyc name
+board is host, host is local
+calling is_remote host
+board_info build name 
+getting epyc name
+board_info host name 
+getting epyc name
+board is host, host is local
+Invoking the compiler as /usr/local/genode/tool/current/bin/genode-x86-g++ -fmessage-length=0 -fno-show-column -ffunction-sections -fdata-sections -fPIC -O2 -m64  -DLOCALEDIR="." -nostdinc -I/home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx -I/home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx/std -I/home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx/c_global -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86_64/libc -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86_64 -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86/libc -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86 -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc-genode -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include/spec/x86_64 -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include/spec/x86 -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include/spec/64bit -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include -I/usr/local/genode/tool/current/x86_64-pc-elf/include/c++/8.3.0/x86_64-pc-elf/64 -I/usr/local/genode/tool/current/lib/gcc/x86_64-pc-elf/8.3.0/include -I/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/include/backward -I/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/util /home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/17_intro/headers/c++2011/stdc++_multiple_inclusion.cc    -std=gnu++11 -Wall -Wsystem-headers -fno-diagnostics-show-caret -fdiagnostics-color=never -S -o stdc++_multiple_inclusion.s
+Setting timeout to 600
+Executing on host: /usr/local/genode/tool/current/bin/genode-x86-g++ -fmessage-length=0 -fno-show-column -ffunction-sections -fdata-sections -fPIC -O2 -m64  -DLOCALEDIR="." -nostdinc -I/home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx -I/home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx/std -I/home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx/c_global -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86_64/libc -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86_64 -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86/libc -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86 -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc-genode -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include/spec/x86_64 -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include/spec/x86 -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include/spec/64bit -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include -I/usr/local/genode/tool/current/x86_64-pc-elf/include/c++/8.3.0/x86_64-pc-elf/64 -I/usr/local/genode/tool/current/lib/gcc/x86_64-pc-elf/8.3.0/include -I/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/include/backward -I/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/util /home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/17_intro/headers/c++2011/stdc++_multiple_inclusion.cc    -std=gnu++11 -Wall -Wsystem-headers -fno-diagnostics-show-caret -fdiagnostics-color=never -S -o stdc++_multiple_inclusion.s    (timeout = 600)
+calling is_remote host
+board_info build name 
+getting epyc name
+board_info host name 
+getting epyc name
+board is host, host is local
+spawn -ignore SIGHUP /usr/local/genode/tool/current/bin/genode-x86-g++ -fmessage-length=0 -fno-show-column -ffunction-sections -fdata-sections -fPIC -O2 -m64 -DLOCALEDIR="." -nostdinc -I/home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx -I/home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx/std -I/home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx/c_global -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86_64/libc -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86_64 -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86/libc -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86 -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc-genode -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include/spec/x86_64 -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include/spec/x86 -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include/spec/64bit -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include -I/usr/local/genode/tool/current/x86_64-pc-elf/include/c++/8.3.0/x86_64-pc-elf/64 -I/usr/local/genode/tool/current/lib/gcc/x86_64-pc-elf/8.3.0/include -I/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/include/backward -I/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/util /home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/17_intro/headers/c++2011/stdc++_multiple_inclusion.cc -std=gnu++11 -Wall -Wsystem-headers -fno-diagnostics-show-caret -fdiagnostics-color=never -S -o stdc++_multiple_inclusion.s
+pid is 223378 -223378
+In file included from /home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx/c_global/cwctype:50,
+                 from /home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx/bits/locale_facets.h:39,
+                 from /home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx/bits/basic_ios.h:37,
+                 from /home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx/std/ios:44,
+                 from /home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx/std/istream:38,
+                 from /home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx/std/sstream:38,
+                 from /home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx/std/complex:45,
+                 from /home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx/c_global/ccomplex:39,
+                 from /home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx/bits/stdc++.h:52,
+                 from /home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/17_intro/headers/c++2011/stdc++_multiple_inclusion.cc:25:
+/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc/wctype.h:61: warning: declaration of 'int iswalnum(wint_t)' conflicts with built-in declaration 'int iswalnum(unsigned int)' [-Wbuiltin-declaration-mismatch]
+/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc/wctype.h:62: warning: declaration of 'int iswalpha(wint_t)' conflicts with built-in declaration 'int iswalpha(unsigned int)' [-Wbuiltin-declaration-mismatch]
+/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc/wctype.h:63: warning: declaration of 'int iswblank(wint_t)' conflicts with built-in declaration 'int iswblank(unsigned int)' [-Wbuiltin-declaration-mismatch]
+/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc/wctype.h:64: warning: declaration of 'int iswcntrl(wint_t)' conflicts with built-in declaration 'int iswcntrl(unsigned int)' [-Wbuiltin-declaration-mismatch]
+/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc/wctype.h:66: warning: declaration of 'int iswdigit(wint_t)' conflicts with built-in declaration 'int iswdigit(unsigned int)' [-Wbuiltin-declaration-mismatch]
+/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc/wctype.h:67: warning: declaration of 'int iswgraph(wint_t)' conflicts with built-in declaration 'int iswgraph(unsigned int)' [-Wbuiltin-declaration-mismatch]
+/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc/wctype.h:68: warning: declaration of 'int iswlower(wint_t)' conflicts with built-in declaration 'int iswlower(unsigned int)' [-Wbuiltin-declaration-mismatch]
+/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc/wctype.h:69: warning: declaration of 'int iswprint(wint_t)' conflicts with built-in declaration 'int iswprint(unsigned int)' [-Wbuiltin-declaration-mismatch]
+/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc/wctype.h:70: warning: declaration of 'int iswpunct(wint_t)' conflicts with built-in declaration 'int iswpunct(unsigned int)' [-Wbuiltin-declaration-mismatch]
+/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc/wctype.h:71: warning: declaration of 'int iswspace(wint_t)' conflicts with built-in declaration 'int iswspace(unsigned int)' [-Wbuiltin-declaration-mismatch]
+/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc/wctype.h:72: warning: declaration of 'int iswupper(wint_t)' conflicts with built-in declaration 'int iswupper(unsigned int)' [-Wbuiltin-declaration-mismatch]
+/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc/wctype.h:73: warning: declaration of 'int iswxdigit(wint_t)' conflicts with built-in declaration 'int iswxdigit(unsigned int)' [-Wbuiltin-declaration-mismatch]
+/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc/wctype.h:75: warning: declaration of 'wint_t towlower(wint_t)' conflicts with built-in declaration 'unsigned int towlower(unsigned int)' [-Wbuiltin-declaration-mismatch]
+/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc/wctype.h:76: warning: declaration of 'wint_t towupper(wint_t)' conflicts with built-in declaration 'unsigned int towupper(unsigned int)' [-Wbuiltin-declaration-mismatch]
+pid is -1
+waitres is 223378 exp6 0 0
+output is In file included from /home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx/c_global/cwctype:50,
+                 from /home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx/bits/locale_facets.h:39,
+                 from /home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx/bits/basic_ios.h:37,
+                 from /home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx/std/ios:44,
+                 from /home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx/std/istream:38,
+                 from /home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx/std/sstream:38,
+                 from /home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx/std/complex:45,
+                 from /home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx/c_global/ccomplex:39,
+                 from /home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx/bits/stdc++.h:52,
+                 from /home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/17_intro/headers/c++2011/stdc++_multiple_inclusion.cc:25:
+/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc/wctype.h:61: warning: declaration of 'int iswalnum(wint_t)' conflicts with built-in declaration 'int iswalnum(unsigned int)' [-Wbuiltin-declaration-mismatch]
+/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc/wctype.h:62: warning: declaration of 'int iswalpha(wint_t)' conflicts with built-in declaration 'int iswalpha(unsigned int)' [-Wbuiltin-declaration-mismatch]
+/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc/wctype.h:63: warning: declaration of 'int iswblank(wint_t)' conflicts with built-in declaration 'int iswblank(unsigned int)' [-Wbuiltin-declaration-mismatch]
+/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc/wctype.h:64: warning: declaration of 'int iswcntrl(wint_t)' conflicts with built-in declaration 'int iswcntrl(unsigned int)' [-Wbuiltin-declaration-mismatch]
+/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc/wctype.h:66: warning: declaration of 'int iswdigit(wint_t)' conflicts with built-in declaration 'int iswdigit(unsigned int)' [-Wbuiltin-declaration-mismatch]
+/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc/wctype.h:67: warning: declaration of 'int iswgraph(wint_t)' conflicts with built-in declaration 'int iswgraph(unsigned int)' [-Wbuiltin-declaration-mismatch]
+/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc/wctype.h:68: warning: declaration of 'int iswlower(wint_t)' conflicts with built-in declaration 'int iswlower(unsigned int)' [-Wbuiltin-declaration-mismatch]
+/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc/wctype.h:69: warning: declaration of 'int iswprint(wint_t)' conflicts with built-in declaration 'int iswprint(unsigned int)' [-Wbuiltin-declaration-mismatch]
+/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc/wctype.h:70: warning: declaration of 'int iswpunct(wint_t)' conflicts with built-in declaration 'int iswpunct(unsigned int)' [-Wbuiltin-declaration-mismatch]
+/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc/wctype.h:71: warning: declaration of 'int iswspace(wint_t)' conflicts with built-in declaration 'int iswspace(unsigned int)' [-Wbuiltin-declaration-mismatch]
+/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc/wctype.h:72: warning: declaration of 'int iswupper(wint_t)' conflicts with built-in declaration 'int iswupper(unsigned int)' [-Wbuiltin-declaration-mismatch]
+/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc/wctype.h:73: warning: declaration of 'int iswxdigit(wint_t)' conflicts with built-in declaration 'int iswxdigit(unsigned int)' [-Wbuiltin-declaration-mismatch]
+/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc/wctype.h:75: warning: declaration of 'wint_t towlower(wint_t)' conflicts with built-in declaration 'unsigned int towlower(unsigned int)' [-Wbuiltin-declaration-mismatch]
+/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc/wctype.h:76: warning: declaration of 'wint_t towupper(wint_t)' conflicts with built-in declaration 'unsigned int towupper(unsigned int)' [-Wbuiltin-declaration-mismatch]
+ status 0
+calling is_remote host
+board_info build name 
+getting epyc name
+board_info host name 
+getting epyc name
+board is host, host is local
+Checking pattern "sparc-*-sunos*" with x86_64-pc-freebsd12.0
+Checking pattern "alpha*-*-*" with x86_64-pc-freebsd12.0
+Checking pattern "hppa*-*-hpux*" with x86_64-pc-freebsd12.0
+output is:
+In file included from /home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx/c_global/cwctype:50,
+                 from /home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx/bits/locale_facets.h:39,
+                 from /home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx/bits/basic_ios.h:37,
+                 from /home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx/std/ios:44,
+                 from /home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx/std/istream:38,
+                 from /home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx/std/sstream:38,
+                 from /home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx/std/complex:45,
+                 from /home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx/c_global/ccomplex:39,
+                 from /home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx/bits/stdc++.h:52,
+                 from /home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/17_intro/headers/c++2011/stdc++_multiple_inclusion.cc:25:
+/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc/wctype.h:61: warning: declaration of 'int iswalnum(wint_t)' conflicts with built-in declaration 'int iswalnum(unsigned int)' [-Wbuiltin-declaration-mismatch]
+/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc/wctype.h:62: warning: declaration of 'int iswalpha(wint_t)' conflicts with built-in declaration 'int iswalpha(unsigned int)' [-Wbuiltin-declaration-mismatch]
+/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc/wctype.h:63: warning: declaration of 'int iswblank(wint_t)' conflicts with built-in declaration 'int iswblank(unsigned int)' [-Wbuiltin-declaration-mismatch]
+/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc/wctype.h:64: warning: declaration of 'int iswcntrl(wint_t)' conflicts with built-in declaration 'int iswcntrl(unsigned int)' [-Wbuiltin-declaration-mismatch]
+/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc/wctype.h:66: warning: declaration of 'int iswdigit(wint_t)' conflicts with built-in declaration 'int iswdigit(unsigned int)' [-Wbuiltin-declaration-mismatch]
+/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc/wctype.h:67: warning: declaration of 'int iswgraph(wint_t)' conflicts with built-in declaration 'int iswgraph(unsigned int)' [-Wbuiltin-declaration-mismatch]
+/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc/wctype.h:68: warning: declaration of 'int iswlower(wint_t)' conflicts with built-in declaration 'int iswlower(unsigned int)' [-Wbuiltin-declaration-mismatch]
+/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc/wctype.h:69: warning: declaration of 'int iswprint(wint_t)' conflicts with built-in declaration 'int iswprint(unsigned int)' [-Wbuiltin-declaration-mismatch]
+/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc/wctype.h:70: warning: declaration of 'int iswpunct(wint_t)' conflicts with built-in declaration 'int iswpunct(unsigned int)' [-Wbuiltin-declaration-mismatch]
+/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc/wctype.h:71: warning: declaration of 'int iswspace(wint_t)' conflicts with built-in declaration 'int iswspace(unsigned int)' [-Wbuiltin-declaration-mismatch]
+/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc/wctype.h:72: warning: declaration of 'int iswupper(wint_t)' conflicts with built-in declaration 'int iswupper(unsigned int)' [-Wbuiltin-declaration-mismatch]
+/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc/wctype.h:73: warning: declaration of 'int iswxdigit(wint_t)' conflicts with built-in declaration 'int iswxdigit(unsigned int)' [-Wbuiltin-declaration-mismatch]
+/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc/wctype.h:75: warning: declaration of 'wint_t towlower(wint_t)' conflicts with built-in declaration 'unsigned int towlower(unsigned int)' [-Wbuiltin-declaration-mismatch]
+/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc/wctype.h:76: warning: declaration of 'wint_t towupper(wint_t)' conflicts with built-in declaration 'unsigned int towupper(unsigned int)' [-Wbuiltin-declaration-mismatch]
+
+Checking "spu-*-*" against "x86_64-pc-freebsd12.0"
+Checking pattern "sparc-*-sunos*" with x86_64-pc-freebsd12.0
+Checking pattern "alpha*-*-*" with x86_64-pc-freebsd12.0
+Checking pattern "hppa*-*-hpux*" with x86_64-pc-freebsd12.0
+FAIL: 17_intro/headers/c++2011/stdc++_multiple_inclusion.cc (test for excess errors)

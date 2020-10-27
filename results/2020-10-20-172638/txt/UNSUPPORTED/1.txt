@@ -1,0 +1,7 @@
+Testing 17_intro/shared_with_static_deps.cc
+Grepping /home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/17_intro/shared_with_static_deps.cc for the pattern "{[ 	]+dg-[-a-z]+[ 	]+.*[ 	]+}"
+Processing option:  dg-do 1 link 
+Processing option:  dg-require-sharedlib 3 "" 
+Processing option:  dg-require-effective-target 4 fpic 
+Processing option:  dg-options 5 "-shared -fPIC -static-libgcc -static-libstdc++" 
+UNSUPPORTED: 17_intro/shared_with_static_deps.cc

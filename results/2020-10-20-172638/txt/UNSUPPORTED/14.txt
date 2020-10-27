@@ -1,0 +1,14 @@
+Testing wchar_t/3_neg.cc
+Grepping /home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/21_strings/c_strings/wchar_t/3_neg.cc for the pattern "{[ 	]+dg-[-a-z]+[ 	]+.*[ 	]+}"
+Processing option:  dg-do 1 compile { target correct_iso_cpp_string_wchar_protos } 
+replacement dg-process-target: `{ target correct_iso_cpp_string_wchar_protos }'
+dg-process-target-1: `{target correct_iso_cpp_string_wchar_protos}'
+check_cached_effective_target correct_iso_cpp_string_wchar_protos: returning 0 for unix
+is-effective-target: correct_iso_cpp_string_wchar_protos 0
+Processing option:  dg-options 2 "-O2" 
+Processing option:  dg-error 41 "invalid conversion" 
+Processing option:  dg-error 42 "invalid conversion" 
+Processing option:  dg-error 43 "invalid conversion" 
+Processing option:  dg-error 44 "invalid conversion" 
+Processing option:  dg-error 45 "invalid conversion" 
+UNSUPPORTED: 21_strings/c_strings/wchar_t/3_neg.cc

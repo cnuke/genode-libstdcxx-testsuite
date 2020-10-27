@@ -1,0 +1,7 @@
+Testing char/69626.cc
+Grepping /home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/21_strings/c_strings/char/69626.cc for the pattern "{[ 	]+dg-[-a-z]+[ 	]+.*[ 	]+}"
+Processing option:  dg-options 18 "-std=gnu++98" 
+Processing option:  dg-do 19 compile { target *-*-linux-gnu } 
+replacement dg-process-target: `{ target *-*-linux-gnu }'
+dg-process-target-1: `{target *-*-linux-gnu}'
+UNSUPPORTED: 21_strings/c_strings/char/69626.cc

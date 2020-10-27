@@ -1,0 +1,435 @@
+Testing char/wrapped_locale.cc
+Grepping /home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/22_locale/numpunct/members/char/wrapped_locale.cc for the pattern "{[ 	]+dg-[-a-z]+[ 	]+.*[ 	]+}"
+Processing option:  dg-require-namedlocale 1 "ja_JP.eucJP" 
+board_info target name 
+getting unix name
+calling is_remote target
+board_info build name 
+getting epyc name
+board_info host name 
+getting epyc name
+calling is_remote unix
+board_info build name 
+getting epyc name
+board_info host name 
+getting epyc name
+board is unix, not remote
+board_info target exists is_simulator
+board_info unix exists name
+board_info unix name 
+getting unix name
+board_info unix exists name
+board_info unix exists protocol
+board_info unix protocol 
+getting unix protocol
+call_remote  load unix ./nlocale222873.x ja_JP.eucJP {} 
+board_info unix file_transfer 
+getting unix file_transfer
+board_info unix connect 
+getting unix connect
+looking for unix_load
+call_remote calling unix_load
+loading to unix
+calling is_remote unix
+board_info build name 
+getting epyc name
+board_info host name 
+getting epyc name
+board is unix, not remote
+Setting LD_LIBRARY_PATH to :
+Execution timeout is: 300
+calling is_remote unix
+board_info build name 
+getting epyc name
+board_info host name 
+getting epyc name
+board is unix, not remote
+remote_spawn is local
+board_info unix exists name
+board_info unix name 
+getting unix name
+spawning command ./run-core ./nlocale222873.x ja_JP.eucJP
+spawn [open ...]
+setting board_info(unix,fileid) to exp9
+board_info unix exists name
+board_info unix name 
+getting unix name
+board_info unix exists name
+board_info unix exists protocol
+board_info unix protocol 
+getting unix protocol
+call_remote  wait unix 300 
+board_info unix file_transfer 
+getting unix file_transfer
+board_info unix connect 
+getting unix connect
+looking for unix_wait
+looking for unix_wait
+looking for telnet_wait
+looking for standard_wait
+call_remote calling standard_wait
+board_info target exists gcc,timeout
+board_info target exists gcc,timeout
+board_info unix fileid 
+getting unix fileid
+spawn ./core
+Genode 15.05-6023-g5c2e0a322 <local changes>[0m
+17592186044415 MiB RAM and 8997 caps assigned to init[0m
+[init -> nlocale222873.x] locale 'ja_JP.eucJP' not supported[0m
+[init] child "nlocale222873.x" exited with exit value 1[0m[0m
+board_info unix exists fileid_origid
+board_info unix fileid 
+getting unix fileid
+board_info unix fileid_origid 
+getting unix fileid_origid
+exp9 file6
+close result is child process exited abnormally
+board_info unix exists name
+board_info unix name 
+getting unix name
+board_info unix exists name
+board_info unix exists protocol
+board_info unix protocol 
+getting unix protocol
+call_remote  close unix  
+board_info unix connect 
+getting unix connect
+call_remote calling standard_close
+board_info unix exists fileid
+board_info unix file_transfer 
+getting unix file_transfer
+board_info unix name 
+getting unix name
+Executed ./nlocale222873.x, status 1
+spawn ./core
+Genode 15.05-6023-g5c2e0a322 <local changes>[0m
+17592186044415 MiB RAM and 8997 caps assigned to init[0m
+[init -> nlocale222873.x] locale 'ja_JP.eucJP' not supported[0m
+[init] child "nlocale222873.x" exited with exit value 1[0m[0m
+
+check_v3_target_namedlocale <ja_JP.eucJP>: status is <fail>
+Processing option:  dg-require-namedlocale 2 "de_DE.ISO8859-15" 
+board_info target name 
+getting unix name
+calling is_remote target
+board_info build name 
+getting epyc name
+board_info host name 
+getting epyc name
+calling is_remote unix
+board_info build name 
+getting epyc name
+board_info host name 
+getting epyc name
+board is unix, not remote
+board_info target exists is_simulator
+board_info unix exists name
+board_info unix name 
+getting unix name
+board_info unix exists name
+board_info unix exists protocol
+board_info unix protocol 
+getting unix protocol
+call_remote  load unix ./nlocale222873.x de_DE.ISO8859-15 {} 
+board_info unix file_transfer 
+getting unix file_transfer
+board_info unix connect 
+getting unix connect
+looking for unix_load
+call_remote calling unix_load
+loading to unix
+calling is_remote unix
+board_info build name 
+getting epyc name
+board_info host name 
+getting epyc name
+board is unix, not remote
+Setting LD_LIBRARY_PATH to :
+Execution timeout is: 300
+calling is_remote unix
+board_info build name 
+getting epyc name
+board_info host name 
+getting epyc name
+board is unix, not remote
+remote_spawn is local
+board_info unix exists name
+board_info unix name 
+getting unix name
+spawning command ./run-core ./nlocale222873.x de_DE.ISO8859-15
+spawn [open ...]
+setting board_info(unix,fileid) to exp9
+board_info unix exists name
+board_info unix name 
+getting unix name
+board_info unix exists name
+board_info unix exists protocol
+board_info unix protocol 
+getting unix protocol
+call_remote  wait unix 300 
+board_info unix file_transfer 
+getting unix file_transfer
+board_info unix connect 
+getting unix connect
+looking for unix_wait
+looking for unix_wait
+looking for telnet_wait
+looking for standard_wait
+call_remote calling standard_wait
+board_info target exists gcc,timeout
+board_info target exists gcc,timeout
+board_info unix fileid 
+getting unix fileid
+spawn ./core
+Genode 15.05-6023-g5c2e0a322 <local changes>[0m
+17592186044415 MiB RAM and 8997 caps assigned to init[0m
+[init -> nlocale222873.x] locale 'de_DE.ISO8859-15@euro' not supported[0m
+[init] child "nlocale222873.x" exited with exit value 1[0m[0m
+board_info unix exists fileid_origid
+board_info unix fileid 
+getting unix fileid
+board_info unix fileid_origid 
+getting unix fileid_origid
+exp9 file6
+close result is child process exited abnormally
+board_info unix exists name
+board_info unix name 
+getting unix name
+board_info unix exists name
+board_info unix exists protocol
+board_info unix protocol 
+getting unix protocol
+call_remote  close unix  
+board_info unix connect 
+getting unix connect
+call_remote calling standard_close
+board_info unix exists fileid
+board_info unix file_transfer 
+getting unix file_transfer
+board_info unix name 
+getting unix name
+Executed ./nlocale222873.x, status 1
+spawn ./core
+Genode 15.05-6023-g5c2e0a322 <local changes>[0m
+17592186044415 MiB RAM and 8997 caps assigned to init[0m
+[init -> nlocale222873.x] locale 'de_DE.ISO8859-15@euro' not supported[0m
+[init] child "nlocale222873.x" exited with exit value 1[0m[0m
+
+check_v3_target_namedlocale <de_DE.ISO8859-15>: status is <fail>
+Processing option:  dg-require-namedlocale 3 "en_US.ISO8859-1" 
+board_info target name 
+getting unix name
+calling is_remote target
+board_info build name 
+getting epyc name
+board_info host name 
+getting epyc name
+calling is_remote unix
+board_info build name 
+getting epyc name
+board_info host name 
+getting epyc name
+board is unix, not remote
+board_info target exists is_simulator
+board_info unix exists name
+board_info unix name 
+getting unix name
+board_info unix exists name
+board_info unix exists protocol
+board_info unix protocol 
+getting unix protocol
+call_remote  load unix ./nlocale222873.x en_US.ISO8859-1 {} 
+board_info unix file_transfer 
+getting unix file_transfer
+board_info unix connect 
+getting unix connect
+looking for unix_load
+call_remote calling unix_load
+loading to unix
+calling is_remote unix
+board_info build name 
+getting epyc name
+board_info host name 
+getting epyc name
+board is unix, not remote
+Setting LD_LIBRARY_PATH to :
+Execution timeout is: 300
+calling is_remote unix
+board_info build name 
+getting epyc name
+board_info host name 
+getting epyc name
+board is unix, not remote
+remote_spawn is local
+board_info unix exists name
+board_info unix name 
+getting unix name
+spawning command ./run-core ./nlocale222873.x en_US.ISO8859-1
+spawn [open ...]
+setting board_info(unix,fileid) to exp9
+board_info unix exists name
+board_info unix name 
+getting unix name
+board_info unix exists name
+board_info unix exists protocol
+board_info unix protocol 
+getting unix protocol
+call_remote  wait unix 300 
+board_info unix file_transfer 
+getting unix file_transfer
+board_info unix connect 
+getting unix connect
+looking for unix_wait
+looking for unix_wait
+looking for telnet_wait
+looking for standard_wait
+call_remote calling standard_wait
+board_info target exists gcc,timeout
+board_info target exists gcc,timeout
+board_info unix fileid 
+getting unix fileid
+spawn ./core
+Genode 15.05-6023-g5c2e0a322 <local changes>[0m
+17592186044415 MiB RAM and 8997 caps assigned to init[0m
+[init -> nlocale222873.x] locale 'en_US.ISO8859-1' not supported[0m
+[init] child "nlocale222873.x" exited with exit value 1[0m[0m
+board_info unix exists fileid_origid
+board_info unix fileid 
+getting unix fileid
+board_info unix fileid_origid 
+getting unix fileid_origid
+exp9 file6
+close result is child process exited abnormally
+board_info unix exists name
+board_info unix name 
+getting unix name
+board_info unix exists name
+board_info unix exists protocol
+board_info unix protocol 
+getting unix protocol
+call_remote  close unix  
+board_info unix connect 
+getting unix connect
+call_remote calling standard_close
+board_info unix exists fileid
+board_info unix file_transfer 
+getting unix file_transfer
+board_info unix name 
+getting unix name
+Executed ./nlocale222873.x, status 1
+spawn ./core
+Genode 15.05-6023-g5c2e0a322 <local changes>[0m
+17592186044415 MiB RAM and 8997 caps assigned to init[0m
+[init -> nlocale222873.x] locale 'en_US.ISO8859-1' not supported[0m
+[init] child "nlocale222873.x" exited with exit value 1[0m[0m
+
+check_v3_target_namedlocale <en_US.ISO8859-1>: status is <fail>
+Processing option:  dg-require-namedlocale 4 "is_IS.ISO8859-1" 
+board_info target name 
+getting unix name
+calling is_remote target
+board_info build name 
+getting epyc name
+board_info host name 
+getting epyc name
+calling is_remote unix
+board_info build name 
+getting epyc name
+board_info host name 
+getting epyc name
+board is unix, not remote
+board_info target exists is_simulator
+board_info unix exists name
+board_info unix name 
+getting unix name
+board_info unix exists name
+board_info unix exists protocol
+board_info unix protocol 
+getting unix protocol
+call_remote  load unix ./nlocale222873.x is_IS.ISO8859-1 {} 
+board_info unix file_transfer 
+getting unix file_transfer
+board_info unix connect 
+getting unix connect
+looking for unix_load
+call_remote calling unix_load
+loading to unix
+calling is_remote unix
+board_info build name 
+getting epyc name
+board_info host name 
+getting epyc name
+board is unix, not remote
+Setting LD_LIBRARY_PATH to :
+Execution timeout is: 300
+calling is_remote unix
+board_info build name 
+getting epyc name
+board_info host name 
+getting epyc name
+board is unix, not remote
+remote_spawn is local
+board_info unix exists name
+board_info unix name 
+getting unix name
+spawning command ./run-core ./nlocale222873.x is_IS.ISO8859-1
+spawn [open ...]
+setting board_info(unix,fileid) to exp9
+board_info unix exists name
+board_info unix name 
+getting unix name
+board_info unix exists name
+board_info unix exists protocol
+board_info unix protocol 
+getting unix protocol
+call_remote  wait unix 300 
+board_info unix file_transfer 
+getting unix file_transfer
+board_info unix connect 
+getting unix connect
+looking for unix_wait
+looking for unix_wait
+looking for telnet_wait
+looking for standard_wait
+call_remote calling standard_wait
+board_info target exists gcc,timeout
+board_info target exists gcc,timeout
+board_info unix fileid 
+getting unix fileid
+spawn ./core
+Genode 15.05-6023-g5c2e0a322 <local changes>[0m
+17592186044415 MiB RAM and 8997 caps assigned to init[0m
+[init -> nlocale222873.x] locale 'is_IS.ISO8859-1' not supported[0m
+[init] child "nlocale222873.x" exited with exit value 1[0m[0m
+board_info unix exists fileid_origid
+board_info unix fileid 
+getting unix fileid
+board_info unix fileid_origid 
+getting unix fileid_origid
+exp9 file6
+close result is child process exited abnormally
+board_info unix exists name
+board_info unix name 
+getting unix name
+board_info unix exists name
+board_info unix exists protocol
+board_info unix protocol 
+getting unix protocol
+call_remote  close unix  
+board_info unix connect 
+getting unix connect
+call_remote calling standard_close
+board_info unix exists fileid
+board_info unix file_transfer 
+getting unix file_transfer
+board_info unix name 
+getting unix name
+Executed ./nlocale222873.x, status 1
+spawn ./core
+Genode 15.05-6023-g5c2e0a322 <local changes>[0m
+17592186044415 MiB RAM and 8997 caps assigned to init[0m
+[init -> nlocale222873.x] locale 'is_IS.ISO8859-1' not supported[0m
+[init] child "nlocale222873.x" exited with exit value 1[0m[0m
+
+check_v3_target_namedlocale <is_IS.ISO8859-1>: status is <fail>
+UNSUPPORTED: 22_locale/numpunct/members/char/wrapped_locale.cc

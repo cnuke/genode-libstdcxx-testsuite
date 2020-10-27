@@ -1,0 +1,6 @@
+Testing char/2.cc
+Grepping /home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/21_strings/basic_string_view/inserters/char/2.cc for the pattern "{[ 	]+dg-[-a-z]+[ 	]+.*[ 	]+}"
+Processing option:  dg-options 25 "-std=gnu++17" 
+Processing option:  dg-require-fileio 26 "" 
+check_v3_target_fileio: using cached result
+UNSUPPORTED: 21_strings/basic_string_view/inserters/char/2.cc

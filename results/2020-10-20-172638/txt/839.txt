@@ -1,0 +1,25 @@
+Testing decimal/cast_neg.cc
+Grepping /home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/decimal/cast_neg.cc for the pattern "{[ 	]+dg-[-a-z]+[ 	]+.*[ 	]+}"
+Processing option:  dg-do 18 compile 
+Processing option:  dg-require-effective-target 19 dfp 
+check_cached_effective_target dfp: returning 0 for unix
+is-effective-target: dfp 0
+Processing option:  dg-error 42 "error" 
+Processing option:  dg-error 43 "error" 
+Processing option:  dg-error 44 "error" 
+Processing option:  dg-error 45 "error" 
+Processing option:  dg-error 46 "error" 
+Processing option:  dg-error 47 "error" 
+Processing option:  dg-error 48 "error" 
+Processing option:  dg-error 49 "error" 
+Processing option:  dg-error 50 "error" 
+Processing option:  dg-error 52 "error" 
+Processing option:  dg-error 53 "error" 
+Processing option:  dg-error 54 "error" 
+Processing option:  dg-error 55 "error" 
+Processing option:  dg-error 56 "error" 
+Processing option:  dg-error 57 "error" 
+Processing option:  dg-error 58 "error" 
+Processing option:  dg-error 59 "error" 
+Processing option:  dg-error 60 "error" 
+UNSUPPORTED: decimal/cast_neg.cc

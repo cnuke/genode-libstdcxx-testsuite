@@ -1,0 +1,221 @@
+Testing char/9661-1.cc
+Grepping /home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/27_io/objects/char/9661-1.cc for the pattern "{[ 	]+dg-[-a-z]+[ 	]+.*[ 	]+}"
+Processing option:  dg-require-fork 1 "" 
+check_cached_effective_target fork_available: returning 1 for unix
+Processing option:  dg-require-mkfifo 2 "" 
+Checking "*-*-cygwin*" against "x86_64-pc-freebsd12.0"
+check_cached_effective_target mkfifo_available: returning 1 for unix
+board_info build exists name
+board_info build name 
+getting epyc name
+board_info epyc exists name
+board_info epyc exists protocol
+board_info epyc generic_name 
+getting epyc generic_name
+call_remote  file epyc delete ./9661-1.exe 
+board_info epyc file_transfer 
+getting epyc file_transfer
+board_info epyc connect 
+getting epyc connect
+looking for epyc_file
+looking for telnet_file
+looking for standard_file
+call_remote calling standard_file
+dest in proc standard_file is epyc
+calling is_remote epyc
+board_info build name 
+getting epyc name
+board is build, not remote
+extra_tool_flags are:
+  
+board_info target needs_status_wrapper 
+getting unix needs_status_wrapper
+board_info target exists gcc,timeout
+board_info target exists gcc,timeout
+board_info target name 
+getting unix name
+board_info target name 
+getting unix name
+board_info unix exists cflags_for_target
+calling is_remote host
+board_info build name 
+getting epyc name
+board_info host name 
+getting epyc name
+board is host, host is local
+Checking /usr/local/genode/tool/current/bin/genode-x86-g++
+file /usr/local/genode/tool/current/bin/genode-x86-g++ is executable
+board_info unix exists cflags
+board_info unix exists ldflags
+board_info unix ldscript 
+getting unix ldscript
+board_info unix exists libs
+board_info unix exists mathlib
+board_info unix exists remote_link
+board_info unix exists output_format
+board_info unix exists multilib_flags
+board_info unix multilib_flags 
+getting unix multilib_flags
+doing compile
+calling is_remote host
+board_info build name 
+getting epyc name
+board_info host name 
+getting epyc name
+board is host, host is local
+calling is_remote host
+board_info build name 
+getting epyc name
+board_info host name 
+getting epyc name
+board is host, host is local
+calling is_remote host
+board_info build name 
+getting epyc name
+board_info host name 
+getting epyc name
+board is host, host is local
+Invoking the compiler as /usr/local/genode/tool/current/bin/genode-x86-g++ -fmessage-length=0 -fno-show-column -ffunction-sections -fdata-sections -fPIC -O2 -m64  -DLOCALEDIR="." -nostdinc -I/home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx -I/home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx/std -I/home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx/c_global -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86_64/libc -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86_64 -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86/libc -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86 -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc-genode -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include/spec/x86_64 -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include/spec/x86 -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include/spec/64bit -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include -I/usr/local/genode/tool/current/x86_64-pc-elf/include/c++/8.3.0/x86_64-pc-elf/64 -I/usr/local/genode/tool/current/lib/gcc/x86_64-pc-elf/8.3.0/include -I/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/include/backward -I/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/util /home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/27_io/objects/char/9661-1.cc      -fno-diagnostics-show-caret -fdiagnostics-color=never ./libtestc++.a -Wl,-melf_x86_64 -Wl,-gc-sections -Wl,-z -Wl,max-page-size=0x1000 -Wl,-Ttext=0x01000000 -Wl,--dynamic-linker=ld.lib.so -Wl,--dynamic-list=/home/jws/develop/genode/repos/base/src/ld/genode_dyn.dl -Wl,--eh-frame-hdr -Wl,-rpath-link=. -Wl,-T -Wl,/home/jws/develop/genode/repos/base/src/ld/genode_dyn.ld -l:libc.lib.so -l:libm.lib.so -l:posix.lib.so -nostdlib /usr/local/genode/tool/current/lib/gcc/x86_64-pc-elf/8.3.0/64/libgcc.a -L/home/jws/develop/genode-libstdcxx-testsuite/var/abi -l:stdcxx.lib.so -l:ld.lib.so  -lm  -o ./9661-1.exe
+Setting timeout to 600
+Executing on host: /usr/local/genode/tool/current/bin/genode-x86-g++ -fmessage-length=0 -fno-show-column -ffunction-sections -fdata-sections -fPIC -O2 -m64  -DLOCALEDIR="." -nostdinc -I/home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx -I/home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx/std -I/home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx/c_global -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86_64/libc -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86_64 -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86/libc -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86 -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc-genode -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include/spec/x86_64 -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include/spec/x86 -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include/spec/64bit -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include -I/usr/local/genode/tool/current/x86_64-pc-elf/include/c++/8.3.0/x86_64-pc-elf/64 -I/usr/local/genode/tool/current/lib/gcc/x86_64-pc-elf/8.3.0/include -I/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/include/backward -I/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/util /home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/27_io/objects/char/9661-1.cc      -fno-diagnostics-show-caret -fdiagnostics-color=never ./libtestc++.a -Wl,-melf_x86_64 -Wl,-gc-sections -Wl,-z -Wl,max-page-size=0x1000 -Wl,-Ttext=0x01000000 -Wl,--dynamic-linker=ld.lib.so -Wl,--dynamic-list=/home/jws/develop/genode/repos/base/src/ld/genode_dyn.dl -Wl,--eh-frame-hdr -Wl,-rpath-link=. -Wl,-T -Wl,/home/jws/develop/genode/repos/base/src/ld/genode_dyn.ld -l:libc.lib.so -l:libm.lib.so -l:posix.lib.so -nostdlib /usr/local/genode/tool/current/lib/gcc/x86_64-pc-elf/8.3.0/64/libgcc.a -L/home/jws/develop/genode-libstdcxx-testsuite/var/abi -l:stdcxx.lib.so -l:ld.lib.so  -lm  -o ./9661-1.exe    (timeout = 600)
+calling is_remote host
+board_info build name 
+getting epyc name
+board_info host name 
+getting epyc name
+board is host, host is local
+spawn -ignore SIGHUP /usr/local/genode/tool/current/bin/genode-x86-g++ -fmessage-length=0 -fno-show-column -ffunction-sections -fdata-sections -fPIC -O2 -m64 -DLOCALEDIR="." -nostdinc -I/home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx -I/home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx/std -I/home/jws/develop/genode/depot//genodelabs/api/stdcxx/2020-10-19-a/include/stdcxx/c_global -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86_64/libc -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86_64 -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86/libc -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/spec/x86 -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc-genode -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include/libc -I/home/jws/develop/genode/depot//genodelabs/api/libc/2020-10-19-a/include -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include/spec/x86_64 -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include/spec/x86 -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include/spec/64bit -I/home/jws/develop/genode/depot//genodelabs/api/base/2020-10-19-a/include -I/usr/local/genode/tool/current/x86_64-pc-elf/include/c++/8.3.0/x86_64-pc-elf/64 -I/usr/local/genode/tool/current/lib/gcc/x86_64-pc-elf/8.3.0/include -I/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/include/backward -I/home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/util /home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/27_io/objects/char/9661-1.cc -fno-diagnostics-show-caret -fdiagnostics-color=never ./libtestc++.a -Wl,-melf_x86_64 -Wl,-gc-sections -Wl,-z -Wl,max-page-size=0x1000 -Wl,-Ttext=0x01000000 -Wl,--dynamic-linker=ld.lib.so -Wl,--dynamic-list=/home/jws/develop/genode/repos/base/src/ld/genode_dyn.dl -Wl,--eh-frame-hdr -Wl,-rpath-link=. -Wl,-T -Wl,/home/jws/develop/genode/repos/base/src/ld/genode_dyn.ld -l:libc.lib.so -l:libm.lib.so -l:posix.lib.so -nostdlib /usr/local/genode/tool/current/lib/gcc/x86_64-pc-elf/8.3.0/64/libgcc.a -L/home/jws/develop/genode-libstdcxx-testsuite/var/abi -l:stdcxx.lib.so -l:ld.lib.so -lm -o ./9661-1.exe
+pid is 83378 -83378
+pid is -1
+waitres is 83378 exp6 0 0
+output is  status 0
+calling is_remote host
+board_info build name 
+getting epyc name
+board_info host name 
+getting epyc name
+board is host, host is local
+Checking pattern "sparc-*-sunos*" with x86_64-pc-freebsd12.0
+Checking pattern "alpha*-*-*" with x86_64-pc-freebsd12.0
+Checking pattern "hppa*-*-hpux*" with x86_64-pc-freebsd12.0
+Checking "spu-*-*" against "x86_64-pc-freebsd12.0"
+Checking pattern "sparc-*-sunos*" with x86_64-pc-freebsd12.0
+Checking pattern "alpha*-*-*" with x86_64-pc-freebsd12.0
+Checking pattern "hppa*-*-hpux*" with x86_64-pc-freebsd12.0
+PASS: 27_io/objects/char/9661-1.cc (test for excess errors)
+board_info target name 
+getting unix name
+calling is_remote target
+board_info build name 
+getting epyc name
+board_info host name 
+getting epyc name
+calling is_remote unix
+board_info build name 
+getting epyc name
+board_info host name 
+getting epyc name
+board is unix, not remote
+board_info target exists is_simulator
+board_info unix exists name
+board_info unix name 
+getting unix name
+board_info unix exists name
+board_info unix exists protocol
+board_info unix protocol 
+getting unix protocol
+call_remote  load unix ./9661-1.exe {} {} 
+board_info unix file_transfer 
+getting unix file_transfer
+board_info unix connect 
+getting unix connect
+looking for unix_load
+call_remote calling unix_load
+loading to unix
+calling is_remote unix
+board_info build name 
+getting epyc name
+board_info host name 
+getting epyc name
+board is unix, not remote
+Setting LD_LIBRARY_PATH to :
+Execution timeout is: 300
+calling is_remote unix
+board_info build name 
+getting epyc name
+board_info host name 
+getting epyc name
+board is unix, not remote
+remote_spawn is local
+board_info unix exists name
+board_info unix name 
+getting unix name
+spawning command ./run-core ./9661-1.exe 
+spawn [open ...]
+setting board_info(unix,fileid) to exp9
+board_info unix exists name
+board_info unix name 
+getting unix name
+board_info unix exists name
+board_info unix exists protocol
+board_info unix protocol 
+getting unix protocol
+call_remote  wait unix 300 
+board_info unix file_transfer 
+getting unix file_transfer
+board_info unix connect 
+getting unix connect
+looking for unix_wait
+looking for unix_wait
+looking for telnet_wait
+looking for standard_wait
+call_remote calling standard_wait
+board_info target exists gcc,timeout
+board_info target exists gcc,timeout
+board_info unix fileid 
+getting unix fileid
+spawn ./core
+Genode 15.05-6023-g5c2e0a322 <local changes>[0m
+17592186044415 MiB RAM and 8997 caps assigned to init[0m
+[init -> lx_fs] [31mError: unlink not implemented[0m[0m
+[init -> 9661-1.exe] [34mWarning: mkfifo: mkfifo not implemented[0m[0m
+[init -> 9661-1.exe] [34mWarning: semget: semget not implemented[0m[0m
+[init -> 9661-1.exe] [31mError: Uncaught exception of type 'std::runtime_error'[0m[0m
+[init -> 9661-1.exe] [34mWarning: abort called - thread: ep[0m[0m
+Error: testing '9661-1.exe' hit timeout
+board_info unix exists fileid_origid
+board_info unix fileid 
+getting unix fileid
+board_info unix fileid_origid 
+getting unix fileid_origid
+exp9 file6
+close result is child process exited abnormally
+board_info unix exists name
+board_info unix name 
+getting unix name
+board_info unix exists name
+board_info unix exists protocol
+board_info unix protocol 
+getting unix protocol
+call_remote  close unix  
+board_info unix connect 
+getting unix connect
+call_remote calling standard_close
+board_info unix exists fileid
+board_info unix file_transfer 
+getting unix file_transfer
+board_info unix name 
+getting unix name
+Executed ./9661-1.exe, status 1
+spawn ./core
+Genode 15.05-6023-g5c2e0a322 <local changes>[0m
+17592186044415 MiB RAM and 8997 caps assigned to init[0m
+[init -> lx_fs] [31mError: unlink not implemented[0m[0m
+[init -> 9661-1.exe] [34mWarning: mkfifo: mkfifo not implemented[0m[0m
+[init -> 9661-1.exe] [34mWarning: semget: semget not implemented[0m[0m
+[init -> 9661-1.exe] [31mError: Uncaught exception of type 'std::runtime_error'[0m[0m
+[init -> 9661-1.exe] [34mWarning: abort called - thread: ep[0m[0m
+Error: testing '9661-1.exe' hit timeout
+
+Exec failed, errorCode: CHILDSTATUS 83385 3
+FAIL: 27_io/objects/char/9661-1.cc execution test

@@ -1,0 +1,8 @@
+Testing thread/mutex_weaktoshared.cc
+Grepping /home/jws/develop/genode-libstdcxx-testsuite/var/src/stdcxx-80f380143250d4f951433876698b54fdac32b95f/src/lib/stdcxx/testsuite/tr1/2_general_utilities/shared_ptr/thread/mutex_weaktoshared.cc for the pattern "{[ 	]+dg-[-a-z]+[ 	]+.*[ 	]+}"
+Processing option:  dg-do 20 run 
+Processing option:  dg-options 21 "-pthread"  
+Processing option:  dg-require-effective-target 22 pthread 
+check_cached_effective_target pthread: returning 0 for unix
+is-effective-target: pthread 0
+UNSUPPORTED: tr1/2_general_utilities/shared_ptr/thread/mutex_weaktoshared.cc
